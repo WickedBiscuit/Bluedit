@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E60706B79E60BD71F9C8717 /* Pods_Bluedit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4227852A08C1C8BDABCBA0AA /* Pods_Bluedit.framework */; };
+		5F1B06132C21FF20008ADA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06122C21FF20008ADA2B /* AppDelegate.swift */; };
+		5F1B06152C21FF20008ADA2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */; };
+		5F1B06172C21FF20008ADA2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06162C21FF20008ADA2B /* ViewController.swift */; };
+		5F1B061A2C21FF20008ADA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B06182C21FF20008ADA2B /* Main.storyboard */; };
+		5F1B061C2C21FF22008ADA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B061B2C21FF22008ADA2B /* Assets.xcassets */; };
+		5F1B061F2C21FF22008ADA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */; };
+		5F1B062A2C21FF23008ADA2B /* BlueditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06292C21FF23008ADA2B /* BlueditTests.swift */; };
+		5F1B06342C21FF23008ADA2B /* BlueditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06332C21FF23008ADA2B /* BlueditUITests.swift */; };
+		5F1B06362C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06352C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift */; };
+		E876ED7599CFCA7AB1DF0BFE /* Pods_BlueditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F7A9F817E7405FB19BB744 /* Pods_BlueditTests.framework */; };
+		F9E27C89879F34FF04BACA81 /* Pods_Bluedit_BlueditUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FE5F6BD144B48BB1621846 /* Pods_Bluedit_BlueditUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F1B06262C21FF23008ADA2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F1B06072C21FF20008ADA2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1B060E2C21FF20008ADA2B;
+			remoteInfo = Bluedit;
+		};
+		5F1B06302C21FF23008ADA2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F1B06072C21FF20008ADA2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1B060E2C21FF20008ADA2B;
+			remoteInfo = Bluedit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029F648E18725C8CA0C69E06 /* Pods-Bluedit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluedit.debug.xcconfig"; path = "Target Support Files/Pods-Bluedit/Pods-Bluedit.debug.xcconfig"; sourceTree = "<group>"; };
+		03FE5F6BD144B48BB1621846 /* Pods_Bluedit_BlueditUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bluedit_BlueditUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4227852A08C1C8BDABCBA0AA /* Pods_Bluedit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bluedit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B060F2C21FF20008ADA2B /* Bluedit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluedit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B06122C21FF20008ADA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F1B06162C21FF20008ADA2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F1B06192C21FF20008ADA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F1B061B2C21FF22008ADA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F1B061E2C21FF22008ADA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F1B06202C21FF22008ADA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1B06252C21FF23008ADA2B /* BlueditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B06292C21FF23008ADA2B /* BlueditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueditTests.swift; sourceTree = "<group>"; };
+		5F1B062F2C21FF23008ADA2B /* BlueditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B06332C21FF23008ADA2B /* BlueditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueditUITests.swift; sourceTree = "<group>"; };
+		5F1B06352C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1F7A9F817E7405FB19BB744 /* Pods_BlueditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E08963EA27B304B520EAEC /* Pods-BlueditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueditTests.release.xcconfig"; path = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests.release.xcconfig"; sourceTree = "<group>"; };
+		C20F795D63EA1F6A3C5BF73B /* Pods-Bluedit-BlueditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluedit-BlueditUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1291FFE89252A2C8F820DF5 /* Pods-Bluedit-BlueditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluedit-BlueditUITests.release.xcconfig"; path = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EEDA3484C1505DD5DE0878C7 /* Pods-Bluedit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluedit.release.xcconfig"; path = "Target Support Files/Pods-Bluedit/Pods-Bluedit.release.xcconfig"; sourceTree = "<group>"; };
+		F67F3A102A510B3B68D52C5A /* Pods-BlueditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueditTests.debug.xcconfig"; path = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F1B060C2C21FF20008ADA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E60706B79E60BD71F9C8717 /* Pods_Bluedit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B06222C21FF23008ADA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E876ED7599CFCA7AB1DF0BFE /* Pods_BlueditTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B062C2C21FF23008ADA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E27C89879F34FF04BACA81 /* Pods_Bluedit_BlueditUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3801E2F37D0D0C28728216CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				029F648E18725C8CA0C69E06 /* Pods-Bluedit.debug.xcconfig */,
+				EEDA3484C1505DD5DE0878C7 /* Pods-Bluedit.release.xcconfig */,
+				C20F795D63EA1F6A3C5BF73B /* Pods-Bluedit-BlueditUITests.debug.xcconfig */,
+				E1291FFE89252A2C8F820DF5 /* Pods-Bluedit-BlueditUITests.release.xcconfig */,
+				F67F3A102A510B3B68D52C5A /* Pods-BlueditTests.debug.xcconfig */,
+				B6E08963EA27B304B520EAEC /* Pods-BlueditTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F1B06062C21FF20008ADA2B = {
+			isa = PBXGroup;
+			children = (
+				5F1B06112C21FF20008ADA2B /* Bluedit */,
+				5F1B06282C21FF23008ADA2B /* BlueditTests */,
+				5F1B06322C21FF23008ADA2B /* BlueditUITests */,
+				5F1B06102C21FF20008ADA2B /* Products */,
+				3801E2F37D0D0C28728216CB /* Pods */,
+				C8D88F8AD2FD94479FFE23C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F1B06102C21FF20008ADA2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B060F2C21FF20008ADA2B /* Bluedit.app */,
+				5F1B06252C21FF23008ADA2B /* BlueditTests.xctest */,
+				5F1B062F2C21FF23008ADA2B /* BlueditUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F1B06112C21FF20008ADA2B /* Bluedit */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B06122C21FF20008ADA2B /* AppDelegate.swift */,
+				5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */,
+				5F1B06162C21FF20008ADA2B /* ViewController.swift */,
+				5F1B06182C21FF20008ADA2B /* Main.storyboard */,
+				5F1B061B2C21FF22008ADA2B /* Assets.xcassets */,
+				5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */,
+				5F1B06202C21FF22008ADA2B /* Info.plist */,
+			);
+			path = Bluedit;
+			sourceTree = "<group>";
+		};
+		5F1B06282C21FF23008ADA2B /* BlueditTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B06292C21FF23008ADA2B /* BlueditTests.swift */,
+			);
+			path = BlueditTests;
+			sourceTree = "<group>";
+		};
+		5F1B06322C21FF23008ADA2B /* BlueditUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B06332C21FF23008ADA2B /* BlueditUITests.swift */,
+				5F1B06352C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift */,
+			);
+			path = BlueditUITests;
+			sourceTree = "<group>";
+		};
+		C8D88F8AD2FD94479FFE23C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4227852A08C1C8BDABCBA0AA /* Pods_Bluedit.framework */,
+				03FE5F6BD144B48BB1621846 /* Pods_Bluedit_BlueditUITests.framework */,
+				B1F7A9F817E7405FB19BB744 /* Pods_BlueditTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F1B060E2C21FF20008ADA2B /* Bluedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F1B06392C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "Bluedit" */;
+			buildPhases = (
+				CE9BF1A96989F6980A223526 /* [CP] Check Pods Manifest.lock */,
+				5F1B060B2C21FF20008ADA2B /* Sources */,
+				5F1B060C2C21FF20008ADA2B /* Frameworks */,
+				5F1B060D2C21FF20008ADA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bluedit;
+			productName = Bluedit;
+			productReference = 5F1B060F2C21FF20008ADA2B /* Bluedit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F1B06242C21FF23008ADA2B /* BlueditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F1B063C2C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "BlueditTests" */;
+			buildPhases = (
+				2B63F2922A15E8DBB3BF4795 /* [CP] Check Pods Manifest.lock */,
+				5F1B06212C21FF23008ADA2B /* Sources */,
+				5F1B06222C21FF23008ADA2B /* Frameworks */,
+				5F1B06232C21FF23008ADA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F1B06272C21FF23008ADA2B /* PBXTargetDependency */,
+			);
+			name = BlueditTests;
+			productName = BlueditTests;
+			productReference = 5F1B06252C21FF23008ADA2B /* BlueditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F1B062E2C21FF23008ADA2B /* BlueditUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F1B063F2C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "BlueditUITests" */;
+			buildPhases = (
+				E3B7406F2EC5887A408C0DEF /* [CP] Check Pods Manifest.lock */,
+				5F1B062B2C21FF23008ADA2B /* Sources */,
+				5F1B062C2C21FF23008ADA2B /* Frameworks */,
+				5F1B062D2C21FF23008ADA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F1B06312C21FF23008ADA2B /* PBXTargetDependency */,
+			);
+			name = BlueditUITests;
+			productName = BlueditUITests;
+			productReference = 5F1B062F2C21FF23008ADA2B /* BlueditUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F1B06072C21FF20008ADA2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					5F1B060E2C21FF20008ADA2B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					5F1B06242C21FF23008ADA2B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5F1B060E2C21FF20008ADA2B;
+					};
+					5F1B062E2C21FF23008ADA2B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5F1B060E2C21FF20008ADA2B;
+					};
+				};
+			};
+			buildConfigurationList = 5F1B060A2C21FF20008ADA2B /* Build configuration list for PBXProject "Bluedit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F1B06062C21FF20008ADA2B;
+			productRefGroup = 5F1B06102C21FF20008ADA2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F1B060E2C21FF20008ADA2B /* Bluedit */,
+				5F1B06242C21FF23008ADA2B /* BlueditTests */,
+				5F1B062E2C21FF23008ADA2B /* BlueditUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F1B060D2C21FF20008ADA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B061F2C21FF22008ADA2B /* LaunchScreen.storyboard in Resources */,
+				5F1B061C2C21FF22008ADA2B /* Assets.xcassets in Resources */,
+				5F1B061A2C21FF20008ADA2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B06232C21FF23008ADA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B062D2C21FF23008ADA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B63F2922A15E8DBB3BF4795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueditTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9BF1A96989F6980A223526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bluedit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B7406F2EC5887A408C0DEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bluedit-BlueditUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F1B060B2C21FF20008ADA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B06172C21FF20008ADA2B /* ViewController.swift in Sources */,
+				5F1B06132C21FF20008ADA2B /* AppDelegate.swift in Sources */,
+				5F1B06152C21FF20008ADA2B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B06212C21FF23008ADA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B062A2C21FF23008ADA2B /* BlueditTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B062B2C21FF23008ADA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B06362C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift in Sources */,
+				5F1B06342C21FF23008ADA2B /* BlueditUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F1B06272C21FF23008ADA2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F1B060E2C21FF20008ADA2B /* Bluedit */;
+			targetProxy = 5F1B06262C21FF23008ADA2B /* PBXContainerItemProxy */;
+		};
+		5F1B06312C21FF23008ADA2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F1B060E2C21FF20008ADA2B /* Bluedit */;
+			targetProxy = 5F1B06302C21FF23008ADA2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F1B06182C21FF20008ADA2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1B06192C21FF20008ADA2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1B061E2C21FF22008ADA2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F1B06372C21FF23008ADA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F1B06382C21FF23008ADA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F1B063A2C21FF23008ADA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029F648E18725C8CA0C69E06 /* Pods-Bluedit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bluedit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.Bluedit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F1B063B2C21FF23008ADA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDA3484C1505DD5DE0878C7 /* Pods-Bluedit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bluedit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.Bluedit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F1B063D2C21FF23008ADA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67F3A102A510B3B68D52C5A /* Pods-BlueditTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.BlueditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bluedit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bluedit";
+			};
+			name = Debug;
+		};
+		5F1B063E2C21FF23008ADA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E08963EA27B304B520EAEC /* Pods-BlueditTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.BlueditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bluedit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bluedit";
+			};
+			name = Release;
+		};
+		5F1B06402C21FF23008ADA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20F795D63EA1F6A3C5BF73B /* Pods-Bluedit-BlueditUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.BlueditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bluedit;
+			};
+			name = Debug;
+		};
+		5F1B06412C21FF23008ADA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1291FFE89252A2C8F820DF5 /* Pods-Bluedit-BlueditUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluedit.test.BlueditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bluedit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F1B060A2C21FF20008ADA2B /* Build configuration list for PBXProject "Bluedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B06372C21FF23008ADA2B /* Debug */,
+				5F1B06382C21FF23008ADA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F1B06392C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "Bluedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B063A2C21FF23008ADA2B /* Debug */,
+				5F1B063B2C21FF23008ADA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F1B063C2C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "BlueditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B063D2C21FF23008ADA2B /* Debug */,
+				5F1B063E2C21FF23008ADA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F1B063F2C21FF23008ADA2B /* Build configuration list for PBXNativeTarget "BlueditUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B06402C21FF23008ADA2B /* Debug */,
+				5F1B06412C21FF23008ADA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F1B06072C21FF20008ADA2B /* Project object */;
+}
