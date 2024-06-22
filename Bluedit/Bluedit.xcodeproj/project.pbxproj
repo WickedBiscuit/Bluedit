@@ -11,12 +11,21 @@
 		5F1B06132C21FF20008ADA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06122C21FF20008ADA2B /* AppDelegate.swift */; };
 		5F1B06152C21FF20008ADA2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */; };
 		5F1B06172C21FF20008ADA2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06162C21FF20008ADA2B /* ViewController.swift */; };
-		5F1B061A2C21FF20008ADA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B06182C21FF20008ADA2B /* Main.storyboard */; };
 		5F1B061C2C21FF22008ADA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B061B2C21FF22008ADA2B /* Assets.xcassets */; };
 		5F1B061F2C21FF22008ADA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */; };
 		5F1B062A2C21FF23008ADA2B /* BlueditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06292C21FF23008ADA2B /* BlueditTests.swift */; };
 		5F1B06342C21FF23008ADA2B /* BlueditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06332C21FF23008ADA2B /* BlueditUITests.swift */; };
 		5F1B06362C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B06352C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift */; };
+		5F40E7B02C258DDA00FF086B /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7AF2C258DDA00FF086B /* HomeScreenView.swift */; };
+		5F40E7B22C258DE400FF086B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7B12C258DE400FF086B /* HomeScreenViewController.swift */; };
+		5F40E7B42C258DEE00FF086B /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7B32C258DEE00FF086B /* HomeScreenViewModel.swift */; };
+		5F40E7B62C258E2600FF086B /* HomeScreenViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7B52C258E2600FF086B /* HomeScreenViewModelProtocol.swift */; };
+		5F40E7B82C258E3700FF086B /* HomeScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7B72C258E3700FF086B /* HomeScreenView.xib */; };
+		5F40E7BB2C25910700FF086B /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7BA2C25910700FF086B /* TopicTableViewCell.xib */; };
+		5F40E7BD2C26E46F00FF086B /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */; };
+		5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8671992C26EA16005BA124 /* TopicModel.swift */; };
+		5F86719D2C26EE65005BA124 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719C2C26EE65005BA124 /* Extension.swift */; };
+		5F8671A02C27053A005BA124 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719F2C27053A005BA124 /* AppCoordinator.swift */; };
 		E876ED7599CFCA7AB1DF0BFE /* Pods_BlueditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F7A9F817E7405FB19BB744 /* Pods_BlueditTests.framework */; };
 		F9E27C89879F34FF04BACA81 /* Pods_Bluedit_BlueditUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FE5F6BD144B48BB1621846 /* Pods_Bluedit_BlueditUITests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +55,6 @@
 		5F1B06122C21FF20008ADA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F1B06162C21FF20008ADA2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F1B06192C21FF20008ADA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F1B061B2C21FF22008ADA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F1B061E2C21FF22008ADA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F1B06202C21FF22008ADA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +63,16 @@
 		5F1B062F2C21FF23008ADA2B /* BlueditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1B06332C21FF23008ADA2B /* BlueditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueditUITests.swift; sourceTree = "<group>"; };
 		5F1B06352C21FF23008ADA2B /* BlueditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F40E7AF2C258DDA00FF086B /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		5F40E7B12C258DE400FF086B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		5F40E7B32C258DEE00FF086B /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		5F40E7B52C258E2600FF086B /* HomeScreenViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModelProtocol.swift; sourceTree = "<group>"; };
+		5F40E7B72C258E3700FF086B /* HomeScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenView.xib; sourceTree = "<group>"; };
+		5F40E7BA2C25910700FF086B /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
+		5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
+		5F8671992C26EA16005BA124 /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		5F86719C2C26EE65005BA124 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5F86719F2C27053A005BA124 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B1F7A9F817E7405FB19BB744 /* Pods_BlueditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E08963EA27B304B520EAEC /* Pods-BlueditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueditTests.release.xcconfig"; path = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests.release.xcconfig"; sourceTree = "<group>"; };
 		C20F795D63EA1F6A3C5BF73B /* Pods-Bluedit-BlueditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluedit-BlueditUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +119,6 @@
 				F67F3A102A510B3B68D52C5A /* Pods-BlueditTests.debug.xcconfig */,
 				B6E08963EA27B304B520EAEC /* Pods-BlueditTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,10 +147,13 @@
 		5F1B06112C21FF20008ADA2B /* Bluedit */ = {
 			isa = PBXGroup;
 			children = (
+				5F86719E2C270527005BA124 /* Coordinator */,
+				5F86719B2C26EE5C005BA124 /* Helpers */,
+				5F8671982C26E9FB005BA124 /* Model */,
+				5F40E7AE2C258DC800FF086B /* HomeScreen */,
 				5F1B06122C21FF20008ADA2B /* AppDelegate.swift */,
 				5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */,
 				5F1B06162C21FF20008ADA2B /* ViewController.swift */,
-				5F1B06182C21FF20008ADA2B /* Main.storyboard */,
 				5F1B061B2C21FF22008ADA2B /* Assets.xcassets */,
 				5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */,
 				5F1B06202C21FF22008ADA2B /* Info.plist */,
@@ -158,6 +178,52 @@
 			path = BlueditUITests;
 			sourceTree = "<group>";
 		};
+		5F40E7AE2C258DC800FF086B /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7B92C2590F600FF086B /* Cells */,
+				5F40E7B72C258E3700FF086B /* HomeScreenView.xib */,
+				5F40E7AF2C258DDA00FF086B /* HomeScreenView.swift */,
+				5F40E7B12C258DE400FF086B /* HomeScreenViewController.swift */,
+				5F40E7B32C258DEE00FF086B /* HomeScreenViewModel.swift */,
+				5F40E7B52C258E2600FF086B /* HomeScreenViewModelProtocol.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		5F40E7B92C2590F600FF086B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7BA2C25910700FF086B /* TopicTableViewCell.xib */,
+				5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5F8671982C26E9FB005BA124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F8671992C26EA16005BA124 /* TopicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F86719B2C26EE5C005BA124 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5F86719C2C26EE65005BA124 /* Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5F86719E2C270527005BA124 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5F86719F2C27053A005BA124 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		C8D88F8AD2FD94479FFE23C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +245,7 @@
 				5F1B060B2C21FF20008ADA2B /* Sources */,
 				5F1B060C2C21FF20008ADA2B /* Frameworks */,
 				5F1B060D2C21FF20008ADA2B /* Resources */,
+				A91A425A6A67B66ED70441D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +283,7 @@
 				5F1B062B2C21FF23008ADA2B /* Sources */,
 				5F1B062C2C21FF23008ADA2B /* Frameworks */,
 				5F1B062D2C21FF23008ADA2B /* Resources */,
+				F3825E9EEC332D2B9A4FF183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,8 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1B061F2C21FF22008ADA2B /* LaunchScreen.storyboard in Resources */,
+				5F40E7BB2C25910700FF086B /* TopicTableViewCell.xib in Resources */,
 				5F1B061C2C21FF22008ADA2B /* Assets.xcassets in Resources */,
-				5F1B061A2C21FF20008ADA2B /* Main.storyboard in Resources */,
+				5F40E7B82C258E3700FF086B /* HomeScreenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +387,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91A425A6A67B66ED70441D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluedit/Pods-Bluedit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluedit/Pods-Bluedit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bluedit/Pods-Bluedit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE9BF1A96989F6980A223526 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,6 +450,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3825E9EEC332D2B9A4FF183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -371,9 +474,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8671A02C27053A005BA124 /* AppCoordinator.swift in Sources */,
+				5F40E7B62C258E2600FF086B /* HomeScreenViewModelProtocol.swift in Sources */,
 				5F1B06172C21FF20008ADA2B /* ViewController.swift in Sources */,
+				5F40E7B42C258DEE00FF086B /* HomeScreenViewModel.swift in Sources */,
 				5F1B06132C21FF20008ADA2B /* AppDelegate.swift in Sources */,
 				5F1B06152C21FF20008ADA2B /* SceneDelegate.swift in Sources */,
+				5F86719D2C26EE65005BA124 /* Extension.swift in Sources */,
+				5F40E7BD2C26E46F00FF086B /* TopicTableViewCell.swift in Sources */,
+				5F40E7B02C258DDA00FF086B /* HomeScreenView.swift in Sources */,
+				5F40E7B22C258DE400FF086B /* HomeScreenViewController.swift in Sources */,
+				5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F1B06182C21FF20008ADA2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F1B06192C21FF20008ADA2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F1B061D2C21FF22008ADA2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -556,11 +659,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bluedit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,11 +688,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bluedit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
