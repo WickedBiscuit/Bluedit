@@ -6,6 +6,7 @@ target 'Bluedit' do
   use_frameworks!
 
   # Pods for Bluedit
+  pod 'ObjectMapper'
 
   target 'BlueditTests' do
     inherit! :search_paths

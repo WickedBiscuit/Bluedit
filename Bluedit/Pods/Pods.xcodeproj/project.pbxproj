@@ -7,73 +7,175 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0280DA3C3E9B66668F40A2E6DB00982F /* Pods-BlueditTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9E0E1FBE5E4C25F86E76061EB9E1E5 /* Pods-BlueditTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F6F4F70AF85D6160C8F0F63D63B4DED /* Pods-Bluedit-BlueditUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1C5FA8F3E039925D7E8D9C25DEA0C88 /* Pods-Bluedit-BlueditUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C765F7BDE735A4D5F8AB189F55FD74C /* Pods-Bluedit-BlueditUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D3633954927475D11001DD3858177B /* Pods-Bluedit-BlueditUITests-dummy.m */; };
+		0280DA3C3E9B66668F40A2E6DB00982F /* Pods-BlueditTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81873A77E00157A6C3586DB94FC87FD6 /* Pods-BlueditTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A97FAB0DBD80CAE4619E1D6FB779D79 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FE05F2E74D63E06EBC65F3FC1FCD74 /* DictionaryTransform.swift */; };
+		0EA9853B02C5742C57B3C61A9F87FC54 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBCAB979FEFE64A19A22769391B61 /* Map.swift */; };
+		11C0E2A29A42B4C364D8A8072B5A8B9D /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A512461FDFF3447C1F9B983D38B57 /* MapError.swift */; };
+		15C87DBC1954DFAD7BB62B30A339D537 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D9D0BA7249EA9CF20C51CA4CFDA03 /* Mapper.swift */; };
+		2858635FB9AD9CD61F0F3C8983AFA035 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F28A1E13BFFF50BE1AD2460FEB1A2 /* TransformOperators.swift */; };
+		30B35AE6BCC6913FB47D5CDA8A078402 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1029524E1541D610A575EDBC18F6C7E0 /* ObjectMapper-dummy.m */; };
+		351CE47E1BA50F0166BCD3908CC58113 /* ObjectMapper-Privacy in Resources */ = {isa = PBXBuildFile; fileRef = FE6B8ABE5D0AD8A55BCFA48D21915C07 /* ObjectMapper-Privacy */; };
+		508123D29838B4783621E8351D90989E /* Pods-Bluedit-BlueditUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4E02A188BB65F8CD6A16B850A3EF2 /* Pods-Bluedit-BlueditUITests-dummy.m */; };
 		52DD640A3E9C997513A6021CDE0C400C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A5B015462717153530F7574C27C40C3C /* Pods-Bluedit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C738080E50CE59A000923B830D8CF2A4 /* Pods-Bluedit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0A9B8FE962103C692417501977FDDA9 /* Pods-BlueditTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E6F769E29E969F5FCD0FD86524D98F /* Pods-BlueditTests-dummy.m */; };
-		B88C9336EEDCFD45023083F7AB72545F /* Pods-Bluedit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3AAE13974A6B6052916414A9A554D /* Pods-Bluedit-dummy.m */; };
-		B9ED39A3E244F4BB54910C733B0775D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BCF80715009DF547B219060AF3210D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		53A832403B7DAC2A70F0E4A8DB229696 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AB636BF1DF1D790AAEB9AF3C7CAA4236 /* PrivacyInfo.xcprivacy */; };
+		62C1AAC79B40B8D1E5931D8DFDD9C498 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B5EBAA252ADACB6B41603407B6F480 /* CodableTransform.swift */; };
+		69B9C4893792CB93C723FB80C9D1B8F6 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A192636D73A82DCA81A6C9D0E55072D /* IntegerOperators.swift */; };
+		79ADAF120BD8F702371FC76D58024B0E /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC85459108DBD646DD14460E07E93919 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D7C8CA7C009A2CBFBDA5605009863BD /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F38C15E51C1F2B9C1E126AE9E160E9 /* CustomDateFormatTransform.swift */; };
+		7FF25DB6C96DEC650115DE70534DBB39 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BE25BAD2721D757EC767A2871C642 /* FromJSON.swift */; };
+		854AF7B384AC3B59C8C5011B21DB6D06 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEF119E526123AA16083D5A267C361 /* EnumTransform.swift */; };
+		96BFE4A48AACF681A8EA4D8114F82677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		972C72055CD4F3F594220B761F70C2BD /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7342EEC8FAED1512D4228F5C7C27751D /* DataTransform.swift */; };
+		9BEB7A1A8E6EE69F09831FE3D1752B34 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D531A3475828883DF0737A050073545 /* URLTransform.swift */; };
+		9CC6E6647D12674C8A2D1B37F829702D /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A3A96BA41069EDE2950ECD6D79390 /* TransformOf.swift */; };
+		9EE00B85144B7EA81359C761BB94C2CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A7B1A06DC4D1CC466E5DEEF637CDA0BB /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6C6733794AD4D72F20FDCDA042C93 /* Mappable.swift */; };
+		B06AB1AC5765C2AA548D14B79FD9FC08 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313F6C671EC2A04E1126148F048278C /* DateFormatterTransform.swift */; };
+		B0A9B8FE962103C692417501977FDDA9 /* Pods-BlueditTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E73E39905FD6197390B856EFC7D78 /* Pods-BlueditTests-dummy.m */; };
+		B3FA0C9065BD5770266DB01E5EF6B2DD /* Pods-Bluedit-BlueditUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB100C3461EB22F80E26B641374349F /* Pods-Bluedit-BlueditUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A7F31824526135AB7B6FF0D584F396 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8172668D279F846E6155091618B843E3 /* ImmutableMappable.swift */; };
+		C16C611864A281C0DCAC54F0E8499AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C516D9F4914F1A9D23FDF6E04D1B1F55 /* Pods-Bluedit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C22FB7F868140BE03B8D0D6CC114B42 /* Pods-Bluedit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F45CAE00D553EC712C83EB48AE2F8E /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA4C9AAE7BF46DF0E3548EDA373499 /* HexColorTransform.swift */; };
+		C88CBDDE4785CC990CBE167FABAA27B1 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEF25F36D4DAF97108B8FDD4BD8275 /* DateTransform.swift */; };
+		DFC1B0B2D65BDAF6889AA6875132AC14 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726372F4DA79D500057298381471BD3 /* Operators.swift */; };
+		E39F068D0A3217150F7B6C90223A27B5 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE47D2E86F844F36D9EEFD00FE3B54A /* ISO8601DateTransform.swift */; };
+		E6BED42A0CD0F82C74A67938B92C776C /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA143A426B504FDC5748348BE581A1 /* EnumOperators.swift */; };
+		EB8CF18F6DC9A183BA2BA7DE2E113ABE /* Pods-Bluedit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 206783382101E75BB5A4D90E0A0F7320 /* Pods-Bluedit-dummy.m */; };
+		F0B581BA6237E439BA03B34C2A4A5D42 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2746BF16C4DA94ABBED1B5C70C518F7 /* ToJSON.swift */; };
+		F9EFC06032227F975FCE9A23153F7659 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B790B81E806823C85C2086D7B57A8DD /* TransformType.swift */; };
+		FBE9FC076A3C71745C85B305482BB10D /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF2F24B7BC3AE7EAAB1D4C3E1FC013E /* NSDecimalNumberTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B14618E6D706FAD88B2493D34A508869 /* PBXContainerItemProxy */ = {
+		0F39B61AFBF392102A873E01C1C31185 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C704C1305F3315396B1D89DE7B92828;
 			remoteInfo = "Pods-Bluedit";
 		};
+		61126097301733BE20113B359F5F73B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
+		63BF91062DC246F572F26E9A92843E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68E71E462C154107C49C379E539826E;
+			remoteInfo = "ObjectMapper-Privacy";
+		};
+		957486989086C9364CC93762DEDD46F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		040C4EE6EE206422E8DCA9F3A5218E2A /* Pods-BlueditTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueditTests-Info.plist"; sourceTree = "<group>"; };
-		08E3C689886BFD404177D27C3AB430BE /* Pods-Bluedit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bluedit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0D0A5273FFD221C3DCD3D7E42D1B02E3 /* Pods-BlueditTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueditTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		151F1450CC8BBB00EAA5D7B39D6D1C5D /* Pods-Bluedit-BlueditUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bluedit-BlueditUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		076FDF805F14E682DE9B5E0805045D84 /* Pods-BlueditTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueditTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A192636D73A82DCA81A6C9D0E55072D /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
+		0AE47D2E86F844F36D9EEFD00FE3B54A /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		0B790B81E806823C85C2086D7B57A8DD /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		0F7DFF2A4AF91162CB6CC1DAC5526E4C /* Pods-Bluedit-BlueditUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-BlueditUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1029524E1541D610A575EDBC18F6C7E0 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		132980DB967D2D4EE71C4E9A657950B5 /* Pods-Bluedit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bluedit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14176C41A45EBB964885EF7160100995 /* Pods-Bluedit-BlueditUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bluedit-BlueditUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1726372F4DA79D500057298381471BD3 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		1A5E73E39905FD6197390B856EFC7D78 /* Pods-BlueditTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueditTests-dummy.m"; sourceTree = "<group>"; };
+		1DF2F24B7BC3AE7EAAB1D4C3E1FC013E /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		1EFA4C9AAE7BF46DF0E3548EDA373499 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		206783382101E75BB5A4D90E0A0F7320 /* Pods-Bluedit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bluedit-dummy.m"; sourceTree = "<group>"; };
 		217807FB3C9707E145E24EE4DAA53475 /* Pods-Bluedit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Bluedit"; path = Pods_Bluedit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DB704BCF5A0A08800BEA8D615543099 /* Pods-Bluedit-BlueditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit-BlueditUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2FF5C1FEDE90618977499A6665B24CD9 /* Pods-Bluedit-BlueditUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-BlueditUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3BA3AAE13974A6B6052916414A9A554D /* Pods-Bluedit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bluedit-dummy.m"; sourceTree = "<group>"; };
-		46D3633954927475D11001DD3858177B /* Pods-Bluedit-BlueditUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bluedit-BlueditUITests-dummy.m"; sourceTree = "<group>"; };
+		230CA78CA93ED8DC1B147E26FBF7EEB2 /* Pods-Bluedit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DBEB0E3E004C836C745F082D0AA0897 /* Pods-Bluedit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bluedit.modulemap"; sourceTree = "<group>"; };
+		323BC7BC65BF7648BBA05F34345FE7D5 /* Pods-BlueditTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueditTests-Info.plist"; sourceTree = "<group>"; };
+		33B5EBAA252ADACB6B41603407B6F480 /* CodableTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransform.swift; path = Sources/CodableTransform.swift; sourceTree = "<group>"; };
+		36D07DD8360D10CDCDAF3DD5E4EBF949 /* Pods-BlueditTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlueditTests.modulemap"; sourceTree = "<group>"; };
+		395D9D0BA7249EA9CF20C51CA4CFDA03 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		3996D54243207B230C1B7C4E4473DB48 /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
 		47F1170EC861537BEEC9FBD322F45F04 /* Pods-Bluedit-BlueditUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Bluedit-BlueditUITests"; path = Pods_Bluedit_BlueditUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E51FDF394FA94A62BDE4ACFC65CFB50 /* Pods-BlueditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueditTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D531A3475828883DF0737A050073545 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		4F3A3A96BA41069EDE2950ECD6D79390 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		5313F6C671EC2A04E1126148F048278C /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		550AE57D2F7B95EAAB958DCA8AEE01A4 /* Pods-Bluedit-BlueditUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bluedit-BlueditUITests.modulemap"; sourceTree = "<group>"; };
+		59D6C6733794AD4D72F20FDCDA042C93 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		5A4BE25BAD2721D757EC767A2871C642 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		5C22FB7F868140BE03B8D0D6CC114B42 /* Pods-Bluedit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bluedit-umbrella.h"; sourceTree = "<group>"; };
+		65E2F5752419A067D34C56BC8B8637F8 /* Pods-Bluedit-BlueditUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-BlueditUITests-Info.plist"; sourceTree = "<group>"; };
+		668ED609710697D28AD6AA3DBD146F18 /* Pods-Bluedit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-Info.plist"; sourceTree = "<group>"; };
+		689FB8F4371E0CB5A704A1836D543527 /* ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		698EF4BA6DD7BA0B891B1A9CD4CD5AD6 /* Pods-Bluedit-BlueditUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bluedit-BlueditUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6ACEF119E526123AA16083D5A267C361 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		6E0A512461FDFF3447C1F9B983D38B57 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7342EEC8FAED1512D4228F5C7C27751D /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
 		7450E616652E5A5CDA378A565F34491D /* Pods-BlueditTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BlueditTests"; path = Pods_BlueditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85E6F769E29E969F5FCD0FD86524D98F /* Pods-BlueditTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueditTests-dummy.m"; sourceTree = "<group>"; };
-		89F94ABFB142E42A4FA3557D12F0663F /* Pods-Bluedit-BlueditUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bluedit-BlueditUITests.modulemap"; sourceTree = "<group>"; };
+		8172668D279F846E6155091618B843E3 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		81873A77E00157A6C3586DB94FC87FD6 /* Pods-BlueditTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueditTests-umbrella.h"; sourceTree = "<group>"; };
+		8C2085692CF2840AF8BF54FF276A10F5 /* Pods-BlueditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueditTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DB100C3461EB22F80E26B641374349F /* Pods-Bluedit-BlueditUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bluedit-BlueditUITests-umbrella.h"; sourceTree = "<group>"; };
+		8DEC6FD69BC6F190E910DCA6820F2050 /* Pods-Bluedit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit.debug.xcconfig"; sourceTree = "<group>"; };
+		90FE05F2E74D63E06EBC65F3FC1FCD74 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		996F28A1E13BFFF50BE1AD2460FEB1A2 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADE721D8D14E06A6FECEB7A665791554 /* Pods-Bluedit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit.release.xcconfig"; sourceTree = "<group>"; };
-		B870294476E41BFF6D6344CD80FDA6CD /* Pods-Bluedit-BlueditUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-BlueditUITests-Info.plist"; sourceTree = "<group>"; };
-		C00E68CA28EC6EF783922A884B8FAE8C /* Pods-Bluedit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-acknowledgements.plist"; sourceTree = "<group>"; };
-		C1C5FA8F3E039925D7E8D9C25DEA0C88 /* Pods-Bluedit-BlueditUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bluedit-BlueditUITests-umbrella.h"; sourceTree = "<group>"; };
-		C738080E50CE59A000923B830D8CF2A4 /* Pods-Bluedit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bluedit-umbrella.h"; sourceTree = "<group>"; };
-		CAE0BB6BEF571350E2EECED7F17D8643 /* Pods-Bluedit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit.debug.xcconfig"; sourceTree = "<group>"; };
-		CCF1E8D8A1264579BE01CADB388DD71B /* Pods-Bluedit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bluedit.modulemap"; sourceTree = "<group>"; };
-		D6CB1617247C7661B17D3B1426CE2F7A /* Pods-BlueditTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueditTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D8763F58856CA079A4A8F368BCF317BC /* Pods-BlueditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueditTests.release.xcconfig"; sourceTree = "<group>"; };
-		DCEFA8C555B383F642A99C32543B8F8E /* Pods-Bluedit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bluedit-Info.plist"; sourceTree = "<group>"; };
-		E47301B9A62A91205D8BBB52A1451C5F /* Pods-BlueditTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlueditTests.modulemap"; sourceTree = "<group>"; };
-		FA9E0E1FBE5E4C25F86E76061EB9E1E5 /* Pods-BlueditTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueditTests-umbrella.h"; sourceTree = "<group>"; };
-		FD0CC2E918EB2FBCDCED936520D048E1 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit-BlueditUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB636BF1DF1D790AAEB9AF3C7CAA4236 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Sources/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B0D18DCF279656F79335EAE1CEC02073 /* Pods-Bluedit-BlueditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit-BlueditUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5CEF25F36D4DAF97108B8FDD4BD8275 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		B74E4C4718DF1D926C73E0892BDC0375 /* ObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.release.xcconfig; sourceTree = "<group>"; };
+		B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20EBCAB979FEFE64A19A22769391B61 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		C987402EC2ACD564DBF2064D0AC27ED4 /* Pods-Bluedit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bluedit-frameworks.sh"; sourceTree = "<group>"; };
+		CC85459108DBD646DD14460E07E93919 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		CCE40E7C06BB08D881D1D7B56E395126 /* Pods-BlueditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueditTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2746BF16C4DA94ABBED1B5C70C518F7 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
+		D2DA143A426B504FDC5748348BE581A1 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		DE4CFE5355FBF25E9B47454553BB09BC /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		E52234C6AE6522B6EC494DD606B8CD49 /* ResourceBundle-Privacy-ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Privacy-ObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		E5BD7312B6F38B8CD5A86A089BECFF89 /* Pods-Bluedit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit.release.xcconfig"; sourceTree = "<group>"; };
+		ECFA1BB2C6ED2A5A08CCFEAD37870AE6 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bluedit-BlueditUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDDADEB291472D6F3D612C286DE15ECD /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		F1C4E02A188BB65F8CD6A16B850A3EF2 /* Pods-Bluedit-BlueditUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bluedit-BlueditUITests-dummy.m"; sourceTree = "<group>"; };
+		F4F38C15E51C1F2B9C1E126AE9E160E9 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		F655FD680231C708E1673DD2D7750640 /* Pods-BlueditTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueditTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE6B8ABE5D0AD8A55BCFA48D21915C07 /* ObjectMapper-Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ObjectMapper-Privacy"; path = Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		561600BD0A0F4DB736291357814295B1 /* Frameworks */ = {
+		2D37D02573D08D3D8A618A2CEB9C961A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9ED39A3E244F4BB54910C733B0775D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8D9758CA54652BF8F2EB895F4EF2DEC /* Frameworks */ = {
+		4D32F421889683C317D3290FDB7C2CEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF80715009DF547B219060AF3210D8D /* Foundation.framework in Frameworks */,
+				9EE00B85144B7EA81359C761BB94C2CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B28CE89E3B288FB628B1257A422D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BFE4A48AACF681A8EA4D8114F82677 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAA40A26E4BD8E9B071EFE62F5D3AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16C611864A281C0DCAC54F0E8499AD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,30 +190,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B07CD6676C044A168805C138FCB17F1 /* Pods-BlueditTests */ = {
+		232C45C94FB2EE1574BFBA379EA32283 /* Pods-BlueditTests */ = {
 			isa = PBXGroup;
 			children = (
-				E47301B9A62A91205D8BBB52A1451C5F /* Pods-BlueditTests.modulemap */,
-				0D0A5273FFD221C3DCD3D7E42D1B02E3 /* Pods-BlueditTests-acknowledgements.markdown */,
-				D6CB1617247C7661B17D3B1426CE2F7A /* Pods-BlueditTests-acknowledgements.plist */,
-				85E6F769E29E969F5FCD0FD86524D98F /* Pods-BlueditTests-dummy.m */,
-				040C4EE6EE206422E8DCA9F3A5218E2A /* Pods-BlueditTests-Info.plist */,
-				FA9E0E1FBE5E4C25F86E76061EB9E1E5 /* Pods-BlueditTests-umbrella.h */,
-				5E51FDF394FA94A62BDE4ACFC65CFB50 /* Pods-BlueditTests.debug.xcconfig */,
-				D8763F58856CA079A4A8F368BCF317BC /* Pods-BlueditTests.release.xcconfig */,
+				36D07DD8360D10CDCDAF3DD5E4EBF949 /* Pods-BlueditTests.modulemap */,
+				076FDF805F14E682DE9B5E0805045D84 /* Pods-BlueditTests-acknowledgements.markdown */,
+				F655FD680231C708E1673DD2D7750640 /* Pods-BlueditTests-acknowledgements.plist */,
+				1A5E73E39905FD6197390B856EFC7D78 /* Pods-BlueditTests-dummy.m */,
+				323BC7BC65BF7648BBA05F34345FE7D5 /* Pods-BlueditTests-Info.plist */,
+				81873A77E00157A6C3586DB94FC87FD6 /* Pods-BlueditTests-umbrella.h */,
+				CCE40E7C06BB08D881D1D7B56E395126 /* Pods-BlueditTests.debug.xcconfig */,
+				8C2085692CF2840AF8BF54FF276A10F5 /* Pods-BlueditTests.release.xcconfig */,
 			);
 			name = "Pods-BlueditTests";
 			path = "Target Support Files/Pods-BlueditTests";
 			sourceTree = "<group>";
 		};
-		2E9D66F418E952B01E85F046D2A44088 /* Targets Support Files */ = {
+		2EC4A36694CEC0845A9DA1676F51E881 /* Pods-Bluedit-BlueditUITests */ = {
 			isa = PBXGroup;
 			children = (
-				710B008671021CCBFD88DB08F1D33C43 /* Pods-Bluedit */,
-				DB3421AC2CFE66BF54CF29FA21B529F0 /* Pods-Bluedit-BlueditUITests */,
-				2B07CD6676C044A168805C138FCB17F1 /* Pods-BlueditTests */,
+				550AE57D2F7B95EAAB958DCA8AEE01A4 /* Pods-Bluedit-BlueditUITests.modulemap */,
+				14176C41A45EBB964885EF7160100995 /* Pods-Bluedit-BlueditUITests-acknowledgements.markdown */,
+				0F7DFF2A4AF91162CB6CC1DAC5526E4C /* Pods-Bluedit-BlueditUITests-acknowledgements.plist */,
+				F1C4E02A188BB65F8CD6A16B850A3EF2 /* Pods-Bluedit-BlueditUITests-dummy.m */,
+				698EF4BA6DD7BA0B891B1A9CD4CD5AD6 /* Pods-Bluedit-BlueditUITests-frameworks.sh */,
+				65E2F5752419A067D34C56BC8B8637F8 /* Pods-Bluedit-BlueditUITests-Info.plist */,
+				8DB100C3461EB22F80E26B641374349F /* Pods-Bluedit-BlueditUITests-umbrella.h */,
+				ECFA1BB2C6ED2A5A08CCFEAD37870AE6 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */,
+				B0D18DCF279656F79335EAE1CEC02073 /* Pods-Bluedit-BlueditUITests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-Bluedit-BlueditUITests";
+			path = "Target Support Files/Pods-Bluedit-BlueditUITests";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -122,9 +231,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5DF8C7BE53E040E263ACC344CA50D4B0 /* Products */ = {
+		634AE5F34E6C0EC8C8AE55A91B562B74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */,
+				FE6B8ABE5D0AD8A55BCFA48D21915C07 /* ObjectMapper-Privacy */,
 				217807FB3C9707E145E24EE4DAA53475 /* Pods-Bluedit */,
 				47F1170EC861537BEEC9FBD322F45F04 /* Pods-Bluedit-BlueditUITests */,
 				7450E616652E5A5CDA378A565F34491D /* Pods-BlueditTests */,
@@ -132,20 +243,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		710B008671021CCBFD88DB08F1D33C43 /* Pods-Bluedit */ = {
+		9E2B775554C5039155B0D86C9D95CB22 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCF1E8D8A1264579BE01CADB388DD71B /* Pods-Bluedit.modulemap */,
-				08E3C689886BFD404177D27C3AB430BE /* Pods-Bluedit-acknowledgements.markdown */,
-				C00E68CA28EC6EF783922A884B8FAE8C /* Pods-Bluedit-acknowledgements.plist */,
-				3BA3AAE13974A6B6052916414A9A554D /* Pods-Bluedit-dummy.m */,
-				DCEFA8C555B383F642A99C32543B8F8E /* Pods-Bluedit-Info.plist */,
-				C738080E50CE59A000923B830D8CF2A4 /* Pods-Bluedit-umbrella.h */,
-				CAE0BB6BEF571350E2EECED7F17D8643 /* Pods-Bluedit.debug.xcconfig */,
-				ADE721D8D14E06A6FECEB7A665791554 /* Pods-Bluedit.release.xcconfig */,
+				F6684E63116B6520305ECD081B9B8437 /* ObjectMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B18C7F1ABE93AEE036DB706551510582 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE4CFE5355FBF25E9B47454553BB09BC /* ObjectMapper.modulemap */,
+				1029524E1541D610A575EDBC18F6C7E0 /* ObjectMapper-dummy.m */,
+				689FB8F4371E0CB5A704A1836D543527 /* ObjectMapper-Info.plist */,
+				EDDADEB291472D6F3D612C286DE15ECD /* ObjectMapper-prefix.pch */,
+				CC85459108DBD646DD14460E07E93919 /* ObjectMapper-umbrella.h */,
+				3996D54243207B230C1B7C4E4473DB48 /* ObjectMapper.debug.xcconfig */,
+				B74E4C4718DF1D926C73E0892BDC0375 /* ObjectMapper.release.xcconfig */,
+				E52234C6AE6522B6EC494DD606B8CD49 /* ResourceBundle-Privacy-ObjectMapper-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		B888D3D8FB4918103AFEB2055EA1DFBB /* Pods-Bluedit */ = {
+			isa = PBXGroup;
+			children = (
+				2DBEB0E3E004C836C745F082D0AA0897 /* Pods-Bluedit.modulemap */,
+				132980DB967D2D4EE71C4E9A657950B5 /* Pods-Bluedit-acknowledgements.markdown */,
+				230CA78CA93ED8DC1B147E26FBF7EEB2 /* Pods-Bluedit-acknowledgements.plist */,
+				206783382101E75BB5A4D90E0A0F7320 /* Pods-Bluedit-dummy.m */,
+				C987402EC2ACD564DBF2064D0AC27ED4 /* Pods-Bluedit-frameworks.sh */,
+				668ED609710697D28AD6AA3DBD146F18 /* Pods-Bluedit-Info.plist */,
+				5C22FB7F868140BE03B8D0D6CC114B42 /* Pods-Bluedit-umbrella.h */,
+				8DEC6FD69BC6F190E910DCA6820F2050 /* Pods-Bluedit.debug.xcconfig */,
+				E5BD7312B6F38B8CD5A86A089BECFF89 /* Pods-Bluedit.release.xcconfig */,
 			);
 			name = "Pods-Bluedit";
 			path = "Target Support Files/Pods-Bluedit";
+			sourceTree = "<group>";
+		};
+		BA365824A6186E49721CD562410E973C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB636BF1DF1D790AAEB9AF3C7CAA4236 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -153,8 +297,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				5DF8C7BE53E040E263ACC344CA50D4B0 /* Products */,
-				2E9D66F418E952B01E85F046D2A44088 /* Targets Support Files */,
+				9E2B775554C5039155B0D86C9D95CB22 /* Pods */,
+				634AE5F34E6C0EC8C8AE55A91B562B74 /* Products */,
+				F5EDF153719AFFCF03C757A29E7F41F7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,20 +311,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB3421AC2CFE66BF54CF29FA21B529F0 /* Pods-Bluedit-BlueditUITests */ = {
+		F5EDF153719AFFCF03C757A29E7F41F7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				89F94ABFB142E42A4FA3557D12F0663F /* Pods-Bluedit-BlueditUITests.modulemap */,
-				151F1450CC8BBB00EAA5D7B39D6D1C5D /* Pods-Bluedit-BlueditUITests-acknowledgements.markdown */,
-				2FF5C1FEDE90618977499A6665B24CD9 /* Pods-Bluedit-BlueditUITests-acknowledgements.plist */,
-				46D3633954927475D11001DD3858177B /* Pods-Bluedit-BlueditUITests-dummy.m */,
-				B870294476E41BFF6D6344CD80FDA6CD /* Pods-Bluedit-BlueditUITests-Info.plist */,
-				C1C5FA8F3E039925D7E8D9C25DEA0C88 /* Pods-Bluedit-BlueditUITests-umbrella.h */,
-				FD0CC2E918EB2FBCDCED936520D048E1 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */,
-				2DB704BCF5A0A08800BEA8D615543099 /* Pods-Bluedit-BlueditUITests.release.xcconfig */,
+				B888D3D8FB4918103AFEB2055EA1DFBB /* Pods-Bluedit */,
+				2EC4A36694CEC0845A9DA1676F51E881 /* Pods-Bluedit-BlueditUITests */,
+				232C45C94FB2EE1574BFBA379EA32283 /* Pods-BlueditTests */,
 			);
-			name = "Pods-Bluedit-BlueditUITests";
-			path = "Target Support Files/Pods-Bluedit-BlueditUITests";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F6684E63116B6520305ECD081B9B8437 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				33B5EBAA252ADACB6B41603407B6F480 /* CodableTransform.swift */,
+				F4F38C15E51C1F2B9C1E126AE9E160E9 /* CustomDateFormatTransform.swift */,
+				7342EEC8FAED1512D4228F5C7C27751D /* DataTransform.swift */,
+				5313F6C671EC2A04E1126148F048278C /* DateFormatterTransform.swift */,
+				B5CEF25F36D4DAF97108B8FDD4BD8275 /* DateTransform.swift */,
+				90FE05F2E74D63E06EBC65F3FC1FCD74 /* DictionaryTransform.swift */,
+				D2DA143A426B504FDC5748348BE581A1 /* EnumOperators.swift */,
+				6ACEF119E526123AA16083D5A267C361 /* EnumTransform.swift */,
+				5A4BE25BAD2721D757EC767A2871C642 /* FromJSON.swift */,
+				1EFA4C9AAE7BF46DF0E3548EDA373499 /* HexColorTransform.swift */,
+				8172668D279F846E6155091618B843E3 /* ImmutableMappable.swift */,
+				0A192636D73A82DCA81A6C9D0E55072D /* IntegerOperators.swift */,
+				0AE47D2E86F844F36D9EEFD00FE3B54A /* ISO8601DateTransform.swift */,
+				C20EBCAB979FEFE64A19A22769391B61 /* Map.swift */,
+				6E0A512461FDFF3447C1F9B983D38B57 /* MapError.swift */,
+				59D6C6733794AD4D72F20FDCDA042C93 /* Mappable.swift */,
+				395D9D0BA7249EA9CF20C51CA4CFDA03 /* Mapper.swift */,
+				1DF2F24B7BC3AE7EAAB1D4C3E1FC013E /* NSDecimalNumberTransform.swift */,
+				1726372F4DA79D500057298381471BD3 /* Operators.swift */,
+				D2746BF16C4DA94ABBED1B5C70C518F7 /* ToJSON.swift */,
+				4F3A3A96BA41069EDE2950ECD6D79390 /* TransformOf.swift */,
+				996F28A1E13BFFF50BE1AD2460FEB1A2 /* TransformOperators.swift */,
+				0B790B81E806823C85C2086D7B57A8DD /* TransformType.swift */,
+				4D531A3475828883DF0737A050073545 /* URLTransform.swift */,
+				BA365824A6186E49721CD562410E973C /* Resources */,
+				B18C7F1ABE93AEE036DB706551510582 /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +366,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA8E6865BD5DA53A4133E121A6E00557 /* Headers */ = {
+		5A10BD6ADBD7629DA2F53E8B64CDC118 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F6F4F70AF85D6160C8F0F63D63B4DED /* Pods-Bluedit-BlueditUITests-umbrella.h in Headers */,
+				C516D9F4914F1A9D23FDF6E04D1B1F55 /* Pods-Bluedit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6AAABE08B7803F77C72C859565B24D0 /* Headers */ = {
+		B7CCFCA3B822B78E82C9B7B153FE0C67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B015462717153530F7574C27C40C3C /* Pods-Bluedit-umbrella.h in Headers */,
+				B3FA0C9065BD5770266DB01E5EF6B2DD /* Pods-Bluedit-BlueditUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42F436F964FD0B0EAD8ED8B5E0D8E5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ADAF120BD8F702371FC76D58024B0E /* ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +395,40 @@
 /* Begin PBXNativeTarget section */
 		0C704C1305F3315396B1D89DE7B92828 /* Pods-Bluedit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AFF3C42CEFE63D817DA71530265952F /* Build configuration list for PBXNativeTarget "Pods-Bluedit" */;
+			buildConfigurationList = 6D6137192C74A5E79B3DB0D8A696D8F5 /* Build configuration list for PBXNativeTarget "Pods-Bluedit" */;
 			buildPhases = (
-				D6AAABE08B7803F77C72C859565B24D0 /* Headers */,
-				27BCF94BA9A5CCDD41FC2481C55BEE3F /* Sources */,
-				B8D9758CA54652BF8F2EB895F4EF2DEC /* Frameworks */,
-				A97623779BA7DF6CFA8A2C4224302C9E /* Resources */,
+				5A10BD6ADBD7629DA2F53E8B64CDC118 /* Headers */,
+				15FDBD160182341A844BAAF21EC193FC /* Sources */,
+				4D32F421889683C317D3290FDB7C2CEF /* Frameworks */,
+				53144A4033D12D95FF547B5202937F4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				58514E58C6770CABBEE9900B3E3950CB /* PBXTargetDependency */,
 			);
 			name = "Pods-Bluedit";
 			productName = Pods_Bluedit;
 			productReference = 217807FB3C9707E145E24EE4DAA53475 /* Pods-Bluedit */;
+			productType = "com.apple.product-type.framework";
+		};
+		162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E5851C791A9E38998A2B3B2225779C4 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				E42F436F964FD0B0EAD8ED8B5E0D8E5D /* Headers */,
+				07DDE9EA3A9D7BDF8C87BD45DA3F3C7E /* Sources */,
+				83B28CE89E3B288FB628B1257A422D2C /* Frameworks */,
+				7CB618DECC5BB1918E55500FFF0FE26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B07BAB35C853F1866FB2FCCD5C103A7 /* PBXTargetDependency */,
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */;
 			productType = "com.apple.product-type.framework";
 		};
 		7D5D3C947CED47517ADF9731EC447A3D /* Pods-BlueditTests */ = {
@@ -242,7 +443,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C3AF850E534AE810CBB1BFB797DCF84B /* PBXTargetDependency */,
+				7B67A7C950AFECBF330203C166239D3A /* PBXTargetDependency */,
 			);
 			name = "Pods-BlueditTests";
 			productName = Pods_BlueditTests;
@@ -251,21 +452,39 @@
 		};
 		CA4638E5885C948CCA66081AF756AD3D /* Pods-Bluedit-BlueditUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D4A69917351EAF1516477486FB0A1D7 /* Build configuration list for PBXNativeTarget "Pods-Bluedit-BlueditUITests" */;
+			buildConfigurationList = B05E11420D8D33ACD889251EC7DF7FFF /* Build configuration list for PBXNativeTarget "Pods-Bluedit-BlueditUITests" */;
 			buildPhases = (
-				CA8E6865BD5DA53A4133E121A6E00557 /* Headers */,
-				B340B391D022182320C5AF467A16B6FB /* Sources */,
-				561600BD0A0F4DB736291357814295B1 /* Frameworks */,
-				EA1BF7F86829C7D23397EA39F54E6ADB /* Resources */,
+				B7CCFCA3B822B78E82C9B7B153FE0C67 /* Headers */,
+				4F376634DC9BC972C3793D327C30F5D1 /* Sources */,
+				CFAA40A26E4BD8E9B071EFE62F5D3AA2 /* Frameworks */,
+				78CCDB4B0E8731ABEE6E91E42C4EB056 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE4C6309E4D74137A3538E0E50F6FCF7 /* PBXTargetDependency */,
 			);
 			name = "Pods-Bluedit-BlueditUITests";
 			productName = Pods_Bluedit_BlueditUITests;
 			productReference = 47F1170EC861537BEEC9FBD322F45F04 /* Pods-Bluedit-BlueditUITests */;
 			productType = "com.apple.product-type.framework";
+		};
+		E68E71E462C154107C49C379E539826E /* ObjectMapper-Privacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33A5015AA756777E260333F24773FB5 /* Build configuration list for PBXNativeTarget "ObjectMapper-Privacy" */;
+			buildPhases = (
+				A4C0E8D525B12B79261D870A8AD8F027 /* Sources */,
+				2D37D02573D08D3D8A618A2CEB9C961A /* Frameworks */,
+				68A22F8D40A82BFBF5615425AD0541BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectMapper-Privacy";
+			productName = Privacy;
+			productReference = FE6B8ABE5D0AD8A55BCFA48D21915C07 /* ObjectMapper-Privacy */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -285,10 +504,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5DF8C7BE53E040E263ACC344CA50D4B0 /* Products */;
+			productRefGroup = 634AE5F34E6C0EC8C8AE55A91B562B74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */,
+				E68E71E462C154107C49C379E539826E /* ObjectMapper-Privacy */,
 				0C704C1305F3315396B1D89DE7B92828 /* Pods-Bluedit */,
 				CA4638E5885C948CCA66081AF756AD3D /* Pods-Bluedit-BlueditUITests */,
 				7D5D3C947CED47517ADF9731EC447A3D /* Pods-BlueditTests */,
@@ -304,36 +525,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A97623779BA7DF6CFA8A2C4224302C9E /* Resources */ = {
+		53144A4033D12D95FF547B5202937F4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA1BF7F86829C7D23397EA39F54E6ADB /* Resources */ = {
+		68A22F8D40A82BFBF5615425AD0541BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A832403B7DAC2A70F0E4A8DB229696 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78CCDB4B0E8731ABEE6E91E42C4EB056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB618DECC5BB1918E55500FFF0FE26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351CE47E1BA50F0166BCD3908CC58113 /* ObjectMapper-Privacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		27BCF94BA9A5CCDD41FC2481C55BEE3F /* Sources */ = {
+		07DDE9EA3A9D7BDF8C87BD45DA3F3C7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88C9336EEDCFD45023083F7AB72545F /* Pods-Bluedit-dummy.m in Sources */,
+				62C1AAC79B40B8D1E5931D8DFDD9C498 /* CodableTransform.swift in Sources */,
+				7D7C8CA7C009A2CBFBDA5605009863BD /* CustomDateFormatTransform.swift in Sources */,
+				972C72055CD4F3F594220B761F70C2BD /* DataTransform.swift in Sources */,
+				B06AB1AC5765C2AA548D14B79FD9FC08 /* DateFormatterTransform.swift in Sources */,
+				C88CBDDE4785CC990CBE167FABAA27B1 /* DateTransform.swift in Sources */,
+				0A97FAB0DBD80CAE4619E1D6FB779D79 /* DictionaryTransform.swift in Sources */,
+				E6BED42A0CD0F82C74A67938B92C776C /* EnumOperators.swift in Sources */,
+				854AF7B384AC3B59C8C5011B21DB6D06 /* EnumTransform.swift in Sources */,
+				7FF25DB6C96DEC650115DE70534DBB39 /* FromJSON.swift in Sources */,
+				C7F45CAE00D553EC712C83EB48AE2F8E /* HexColorTransform.swift in Sources */,
+				B6A7F31824526135AB7B6FF0D584F396 /* ImmutableMappable.swift in Sources */,
+				69B9C4893792CB93C723FB80C9D1B8F6 /* IntegerOperators.swift in Sources */,
+				E39F068D0A3217150F7B6C90223A27B5 /* ISO8601DateTransform.swift in Sources */,
+				0EA9853B02C5742C57B3C61A9F87FC54 /* Map.swift in Sources */,
+				11C0E2A29A42B4C364D8A8072B5A8B9D /* MapError.swift in Sources */,
+				A7B1A06DC4D1CC466E5DEEF637CDA0BB /* Mappable.swift in Sources */,
+				15C87DBC1954DFAD7BB62B30A339D537 /* Mapper.swift in Sources */,
+				FBE9FC076A3C71745C85B305482BB10D /* NSDecimalNumberTransform.swift in Sources */,
+				30B35AE6BCC6913FB47D5CDA8A078402 /* ObjectMapper-dummy.m in Sources */,
+				DFC1B0B2D65BDAF6889AA6875132AC14 /* Operators.swift in Sources */,
+				F0B581BA6237E439BA03B34C2A4A5D42 /* ToJSON.swift in Sources */,
+				9CC6E6647D12674C8A2D1B37F829702D /* TransformOf.swift in Sources */,
+				2858635FB9AD9CD61F0F3C8983AFA035 /* TransformOperators.swift in Sources */,
+				F9EFC06032227F975FCE9A23153F7659 /* TransformType.swift in Sources */,
+				9BEB7A1A8E6EE69F09831FE3D1752B34 /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B340B391D022182320C5AF467A16B6FB /* Sources */ = {
+		15FDBD160182341A844BAAF21EC193FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C765F7BDE735A4D5F8AB189F55FD74C /* Pods-Bluedit-BlueditUITests-dummy.m in Sources */,
+				EB8CF18F6DC9A183BA2BA7DE2E113ABE /* Pods-Bluedit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F376634DC9BC972C3793D327C30F5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508123D29838B4783621E8351D90989E /* Pods-Bluedit-BlueditUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C0E8D525B12B79261D870A8AD8F027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,11 +624,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3AF850E534AE810CBB1BFB797DCF84B /* PBXTargetDependency */ = {
+		4B07BAB35C853F1866FB2FCCD5C103A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectMapper-Privacy";
+			target = E68E71E462C154107C49C379E539826E /* ObjectMapper-Privacy */;
+			targetProxy = 63BF91062DC246F572F26E9A92843E88 /* PBXContainerItemProxy */;
+		};
+		58514E58C6770CABBEE9900B3E3950CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 61126097301733BE20113B359F5F73B9 /* PBXContainerItemProxy */;
+		};
+		7B67A7C950AFECBF330203C166239D3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Bluedit";
 			target = 0C704C1305F3315396B1D89DE7B92828 /* Pods-Bluedit */;
-			targetProxy = B14618E6D706FAD88B2493D34A508869 /* PBXContainerItemProxy */;
+			targetProxy = 0F39B61AFBF392102A873E01C1C31185 /* PBXContainerItemProxy */;
+		};
+		AE4C6309E4D74137A3538E0E50F6FCF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 957486989086C9364CC93762DEDD46F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,43 +712,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		15BA4C250F4B623CFA4C97D27CFAFE20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD0CC2E918EB2FBCDCED936520D048E1 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -522,121 +779,9 @@
 			};
 			name = Debug;
 		};
-		60ECB603B915E44D4A21CB4BB5D626E5 /* Debug */ = {
+		62B9AF6B8104F4ABE2F7241B234679E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAE0BB6BEF571350E2EECED7F17D8643 /* Pods-Bluedit.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6ED4386E51DF8D99B867C96B53DF84CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E51FDF394FA94A62BDE4ACFC65CFB50 /* Pods-BlueditTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B0347D703E6907573B38751E21B11D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADE721D8D14E06A6FECEB7A665791554 /* Pods-Bluedit.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E5D47D89F99778E3CFDE5EAF1CB468F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DB704BCF5A0A08800BEA8D615543099 /* Pods-Bluedit-BlueditUITests.release.xcconfig */;
+			baseConfigurationReference = B0D18DCF279656F79335EAE1CEC02073 /* Pods-Bluedit-BlueditUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -672,9 +817,263 @@
 			};
 			name = Release;
 		};
+		6B9FFB5ED0447AD3611A5D883F3627FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3996D54243207B230C1B7C4E4473DB48 /* ObjectMapper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ObjectMapper";
+				IBSC_MODULE = ObjectMapper;
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ResourceBundle-Privacy-ObjectMapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6ED4386E51DF8D99B867C96B53DF84CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE40E7C06BB08D881D1D7B56E395126 /* Pods-BlueditTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueditTests/Pods-BlueditTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE89EC12EA35BFCA3AABBE8AE28C457E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3996D54243207B230C1B7C4E4473DB48 /* ObjectMapper.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B44A00D8868A7ED7977B15BF0717FBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74E4C4718DF1D926C73E0892BDC0375 /* ObjectMapper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC3C85AD301DD3AC266A49A7F3EF26FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BD7312B6F38B8CD5A86A089BECFF89 /* Pods-Bluedit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEA25F4E5136323D3A67F5C62D4EDB60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECFA1BB2C6ED2A5A08CCFEAD37870AE6 /* Pods-Bluedit-BlueditUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit-BlueditUITests/Pods-Bluedit-BlueditUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C34DF4F06204BC08266BFDC1690B91ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEC6FD69BC6F190E910DCA6820F2050 /* Pods-Bluedit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bluedit/Pods-Bluedit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D989005D153D02A90130104E1C9D20EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74E4C4718DF1D926C73E0892BDC0375 /* ObjectMapper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ObjectMapper";
+				IBSC_MODULE = ObjectMapper;
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ResourceBundle-Privacy-ObjectMapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		FC75D9A1A76AB03A4D1746FA86F262A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8763F58856CA079A4A8F368BCF317BC /* Pods-BlueditTests.release.xcconfig */;
+			baseConfigurationReference = 8C2085692CF2840AF8BF54FF276A10F5 /* Pods-BlueditTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -713,20 +1112,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AFF3C42CEFE63D817DA71530265952F /* Build configuration list for PBXNativeTarget "Pods-Bluedit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				60ECB603B915E44D4A21CB4BB5D626E5 /* Debug */,
-				8B0347D703E6907573B38751E21B11D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		22095C9339C4D1C7A26E446090D27879 /* Build configuration list for PBXNativeTarget "Pods-BlueditTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6ED4386E51DF8D99B867C96B53DF84CD /* Debug */,
 				FC75D9A1A76AB03A4D1746FA86F262A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E5851C791A9E38998A2B3B2225779C4 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE89EC12EA35BFCA3AABBE8AE28C457E /* Debug */,
+				B44A00D8868A7ED7977B15BF0717FBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +1139,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D4A69917351EAF1516477486FB0A1D7 /* Build configuration list for PBXNativeTarget "Pods-Bluedit-BlueditUITests" */ = {
+		6D6137192C74A5E79B3DB0D8A696D8F5 /* Build configuration list for PBXNativeTarget "Pods-Bluedit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15BA4C250F4B623CFA4C97D27CFAFE20 /* Debug */,
-				E5D47D89F99778E3CFDE5EAF1CB468F9 /* Release */,
+				C34DF4F06204BC08266BFDC1690B91ED /* Debug */,
+				BC3C85AD301DD3AC266A49A7F3EF26FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B05E11420D8D33ACD889251EC7DF7FFF /* Build configuration list for PBXNativeTarget "Pods-Bluedit-BlueditUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA25F4E5136323D3A67F5C62D4EDB60 /* Debug */,
+				62B9AF6B8104F4ABE2F7241B234679E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33A5015AA756777E260333F24773FB5 /* Build configuration list for PBXNativeTarget "ObjectMapper-Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9FFB5ED0447AD3611A5D883F3627FF /* Debug */,
+				D989005D153D02A90130104E1C9D20EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
