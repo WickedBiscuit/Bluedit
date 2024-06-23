@@ -21,9 +21,19 @@ class AppCoordinator: NSObject {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    private func navigateToAnywhereElse() {
-        // TODO: Add other navigations
+    private func navigateToTopicDetails(model: TopicModel) {
+        let vc = TopicDetailsViewController()
+        vc.viewModel = TopicDetailsViewModel()
+        vc.viewModel.topicModel = model
+        vc.viewModel.delegate = self
+        navigationController.pushViewController(vc, animated: true)
     }
 }
 
-extension AppCoordinator: HomeScreenViewModelDelegate {}
+extension AppCoordinator: HomeScreenViewModelDelegate {
+    func directToTopicDetails(model: TopicModel) {
+        navigateToTopicDetails(model: model)
+    }
+}
+
+extension AppCoordinator: TopicDetailsViewModelDelegate {}
