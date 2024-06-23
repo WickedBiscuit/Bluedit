@@ -9,6 +9,7 @@ class TopicDetailsViewModel: TopicDetailsViewModelProtocol {
     weak var delegate : TopicDetailsViewModelDelegate?
     
     var topicModel: TopicModel?
+    var index: Int?
     
     var reloadTableView: (()->())?
 }

@@ -21,18 +21,19 @@ class AppCoordinator: NSObject {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    private func navigateToTopicDetails(model: TopicModel) {
+    private func navigateToTopicDetails(model: TopicModel, index: Int) {
         let vc = TopicDetailsViewController()
         vc.viewModel = TopicDetailsViewModel()
         vc.viewModel.topicModel = model
+        vc.viewModel.index = index
         vc.viewModel.delegate = self
         navigationController.pushViewController(vc, animated: true)
     }
 }
 
 extension AppCoordinator: HomeScreenViewModelDelegate {
-    func directToTopicDetails(model: TopicModel) {
-        navigateToTopicDetails(model: model)
+    func directToTopicDetails(model: TopicModel, index: Int) {
+        navigateToTopicDetails(model: model, index: index)
     }
 }
 

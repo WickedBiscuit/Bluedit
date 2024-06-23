@@ -13,5 +13,5 @@ protocol HomeScreenViewModelProtocol {
 }
 
 protocol HomeScreenViewModelDelegate: AnyObject {
-    func directToTopicDetails(model: TopicModel)
+    func directToTopicDetails(model: TopicModel, index: Int)
 }

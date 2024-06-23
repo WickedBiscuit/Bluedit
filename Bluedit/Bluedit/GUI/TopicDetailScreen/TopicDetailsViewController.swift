@@ -57,7 +57,7 @@ extension TopicDetailsViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.topicDetailsView.tableView.dequeueReusableCell(withIdentifier: TopicDetailTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailTableViewCell
-        cell.updateDisplay(model: self.viewModel.topicModel ?? nil)
+        cell.updateDisplay(model: self.viewModel.topicModel ?? nil, index: self.viewModel.index ?? 0)
         cell.selectionStyle = .none
     
         return cell
