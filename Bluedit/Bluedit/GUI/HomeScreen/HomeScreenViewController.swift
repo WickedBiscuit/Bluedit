@@ -20,7 +20,11 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView()
         self.setupBindings()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.viewModel.reloadTableView?()
     }
     
     func setupBindings() {
@@ -40,19 +44,19 @@ class HomeScreenViewController: UIViewController {
 
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.dataArray.count
+        return DataManager.shared.topicsDataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.homeScreenView.tableView.dequeueReusableCell(withIdentifier: TopicTableViewCell.cellIdentifier, for: indexPath) as! TopicTableViewCell
         
-        cell.updateDisplay(model: viewModel.dataArray[indexPath.row])
+        cell.updateDisplay(model: DataManager.shared.topicsDataArray[indexPath.row], index: indexPath.row)
         cell.selectionStyle = .none
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.viewModel.delegate?.directToTopicDetails(model: self.viewModel.dataArray[indexPath.row])
+        self.viewModel.delegate?.directToTopicDetails(model: DataManager.shared.topicsDataArray[indexPath.row], index: indexPath.row)
     }
 }

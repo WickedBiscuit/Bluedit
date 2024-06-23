@@ -8,6 +8,7 @@
 import UIKit
 
 class TopicDetailTableViewCell: UITableViewCell {
+    var index: Int?
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.registerTableViewCellFromNib(nibName: TopicDetailTopTableViewCell.cellIdentifier)
@@ -18,12 +19,13 @@ class TopicDetailTableViewCell: UITableViewCell {
     
     var model: TopicModel?
     
-    func updateDisplay(model: TopicModel?) {
+    func updateDisplay(model: TopicModel?, index: Int) {
         guard (model != nil) else {
             return
         }
         
         self.model = model
+        self.index = index
         self.setupTableView()
     }
     
@@ -64,7 +66,7 @@ extension TopicDetailTableViewCell: UITableViewDelegate, UITableViewDataSource {
             case 2:
                 let cell = self.tableView.dequeueReusableCell(withIdentifier: TopicDetailBottomTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailBottomTableViewCell
             
-                cell.updateDisplay(counterNumber: self.model?.upvoteCounter ?? 0)
+                cell.updateDisplay(counterNumber: self.model?.upvoteCounter ?? 0, index: self.index ?? 0)
                 cell.selectionStyle = .none
                 return cell
             default:

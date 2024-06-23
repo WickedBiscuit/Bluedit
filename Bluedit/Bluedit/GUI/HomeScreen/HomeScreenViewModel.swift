@@ -26,6 +26,8 @@ class HomeScreenViewModel: HomeScreenViewModelProtocol {
         
         dataArray = topics
         
+        DataManager.shared.topicsDataArray = topics
+        
         self.reloadTableView?()
 
     }
