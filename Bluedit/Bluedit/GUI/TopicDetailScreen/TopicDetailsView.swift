@@ -9,5 +9,9 @@ import UIKit
 
 class TopicDetailsView: UIView {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!{
+        didSet {
+            tableView.registerTableViewCellFromNib(nibName: TopicDetailTableViewCell.cellIdentifier)
+        }
+    }
 }

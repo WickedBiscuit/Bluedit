@@ -53,7 +53,6 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected topic: ", indexPath.row)
         self.viewModel.delegate?.directToTopicDetails(model: self.viewModel.dataArray[indexPath.row])
     }
 }

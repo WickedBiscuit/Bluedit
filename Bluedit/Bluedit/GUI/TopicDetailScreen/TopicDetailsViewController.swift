@@ -24,6 +24,9 @@ class TopicDetailsViewController: UIViewController {
     func setupTableView() {
         topicDetailsView.tableView.dataSource = self
         topicDetailsView.tableView.delegate = self
+        topicDetailsView.tableView.separatorStyle = .none
+        topicDetailsView.tableView.rowHeight = UITableView.automaticDimension
+        topicDetailsView.tableView.estimatedRowHeight = 100
     }
     
     func setupBindings() {
@@ -35,10 +38,18 @@ class TopicDetailsViewController: UIViewController {
 
 extension TopicDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 1 
     }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 1000
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = self.topicDetailsView.tableView.dequeueReusableCell(withIdentifier: TopicDetailTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailTableViewCell
+        cell.updateDisplay(model: self.viewModel.topicModel ?? nil)
+        cell.selectionStyle = .none
+    
+        return cell
     }
 }
