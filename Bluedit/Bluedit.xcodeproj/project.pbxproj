@@ -23,6 +23,11 @@
 		5F40E7B82C258E3700FF086B /* HomeScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7B72C258E3700FF086B /* HomeScreenView.xib */; };
 		5F40E7BB2C25910700FF086B /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7BA2C25910700FF086B /* TopicTableViewCell.xib */; };
 		5F40E7BD2C26E46F00FF086B /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */; };
+		5F41B54F2C27B05600F598BA /* TopicDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F41B54E2C27B05600F598BA /* TopicDetailsView.xib */; };
+		5F41B5512C27B06100F598BA /* TopicDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5502C27B06100F598BA /* TopicDetailsView.swift */; };
+		5F41B5532C27B06C00F598BA /* TopicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5522C27B06C00F598BA /* TopicDetailsViewController.swift */; };
+		5F41B5552C27B08400F598BA /* TopicDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5542C27B08400F598BA /* TopicDetailsViewModel.swift */; };
+		5F41B5572C27B09400F598BA /* TopicDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5562C27B09400F598BA /* TopicDetailViewModelProtocol.swift */; };
 		5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8671992C26EA16005BA124 /* TopicModel.swift */; };
 		5F86719D2C26EE65005BA124 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719C2C26EE65005BA124 /* Extension.swift */; };
 		5F8671A02C27053A005BA124 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719F2C27053A005BA124 /* AppCoordinator.swift */; };
@@ -70,6 +75,11 @@
 		5F40E7B72C258E3700FF086B /* HomeScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenView.xib; sourceTree = "<group>"; };
 		5F40E7BA2C25910700FF086B /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
 		5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
+		5F41B54E2C27B05600F598BA /* TopicDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicDetailsView.xib; sourceTree = "<group>"; };
+		5F41B5502C27B06100F598BA /* TopicDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsView.swift; sourceTree = "<group>"; };
+		5F41B5522C27B06C00F598BA /* TopicDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsViewController.swift; sourceTree = "<group>"; };
+		5F41B5542C27B08400F598BA /* TopicDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsViewModel.swift; sourceTree = "<group>"; };
+		5F41B5562C27B09400F598BA /* TopicDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		5F8671992C26EA16005BA124 /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		5F86719C2C26EE65005BA124 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5F86719F2C27053A005BA124 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -147,10 +157,10 @@
 		5F1B06112C21FF20008ADA2B /* Bluedit */ = {
 			isa = PBXGroup;
 			children = (
+				5F41B54C2C27B01C00F598BA /* GUI */,
 				5F86719E2C270527005BA124 /* Coordinator */,
 				5F86719B2C26EE5C005BA124 /* Helpers */,
 				5F8671982C26E9FB005BA124 /* Model */,
-				5F40E7AE2C258DC800FF086B /* HomeScreen */,
 				5F1B06122C21FF20008ADA2B /* AppDelegate.swift */,
 				5F1B06142C21FF20008ADA2B /* SceneDelegate.swift */,
 				5F1B06162C21FF20008ADA2B /* ViewController.swift */,
@@ -198,6 +208,27 @@
 				5F40E7BC2C26E46F00FF086B /* TopicTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5F41B54C2C27B01C00F598BA /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				5F41B54D2C27B03F00F598BA /* TopicDetailScreen */,
+				5F40E7AE2C258DC800FF086B /* HomeScreen */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		5F41B54D2C27B03F00F598BA /* TopicDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5F41B54E2C27B05600F598BA /* TopicDetailsView.xib */,
+				5F41B5502C27B06100F598BA /* TopicDetailsView.swift */,
+				5F41B5522C27B06C00F598BA /* TopicDetailsViewController.swift */,
+				5F41B5542C27B08400F598BA /* TopicDetailsViewModel.swift */,
+				5F41B5562C27B09400F598BA /* TopicDetailViewModelProtocol.swift */,
+			);
+			path = TopicDetailScreen;
 			sourceTree = "<group>";
 		};
 		5F8671982C26E9FB005BA124 /* Model */ = {
@@ -343,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F41B54F2C27B05600F598BA /* TopicDetailsView.xib in Resources */,
 				5F1B061F2C21FF22008ADA2B /* LaunchScreen.storyboard in Resources */,
 				5F40E7BB2C25910700FF086B /* TopicTableViewCell.xib in Resources */,
 				5F1B061C2C21FF22008ADA2B /* Assets.xcassets in Resources */,
@@ -480,10 +512,14 @@
 				5F40E7B42C258DEE00FF086B /* HomeScreenViewModel.swift in Sources */,
 				5F1B06132C21FF20008ADA2B /* AppDelegate.swift in Sources */,
 				5F1B06152C21FF20008ADA2B /* SceneDelegate.swift in Sources */,
+				5F41B5532C27B06C00F598BA /* TopicDetailsViewController.swift in Sources */,
+				5F41B5552C27B08400F598BA /* TopicDetailsViewModel.swift in Sources */,
 				5F86719D2C26EE65005BA124 /* Extension.swift in Sources */,
 				5F40E7BD2C26E46F00FF086B /* TopicTableViewCell.swift in Sources */,
 				5F40E7B02C258DDA00FF086B /* HomeScreenView.swift in Sources */,
+				5F41B5512C27B06100F598BA /* TopicDetailsView.swift in Sources */,
 				5F40E7B22C258DE400FF086B /* HomeScreenViewController.swift in Sources */,
+				5F41B5572C27B09400F598BA /* TopicDetailViewModelProtocol.swift in Sources */,
 				5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
