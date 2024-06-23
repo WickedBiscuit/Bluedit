@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,21 +15,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="403" height="246"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-1u-yfA" userLabel="TitleLabel">
-                        <rect key="frame" x="0.0" y="0.0" width="403" height="164"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="This will be a very very very very very very very very very very very very very very very very very very very very long title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-1u-yfA" userLabel="TitleLabel">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="174"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-gp-21g" userLabel="FlairView">
-                        <rect key="frame" x="0.0" y="164" width="403" height="50"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="skI-na-kP4"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMH-VP-IAO" userLabel="ContentLabel">
-                        <rect key="frame" x="0.0" y="214" width="403" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMH-VP-IAO" userLabel="ContentLabel">
+                        <rect key="frame" x="0.0" y="174" width="403" height="61"/>
+                        <string key="text">Lorem asdj askdja lskjd alskdj alksjd laksjd laksjd lakjsdlakjs dlaksjd alskdj alksjd alksdj alksjd alksjdl aksjdlaj slkdja lksjdlak sjdlkajsdlk ajlksdj alksjd </string>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,14 +31,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="pGk-1u-yfA" firstAttribute="leading" secondItem="dAC-gj-nEJ" secondAttribute="leading" id="4V7-f2-Z4N"/>
-                    <constraint firstItem="RMH-VP-IAO" firstAttribute="top" secondItem="Dng-gp-21g" secondAttribute="bottom" id="7g7-Fz-yKX"/>
                     <constraint firstAttribute="trailing" secondItem="pGk-1u-yfA" secondAttribute="trailing" id="9H9-81-pI0"/>
-                    <constraint firstItem="Dng-gp-21g" firstAttribute="top" secondItem="pGk-1u-yfA" secondAttribute="bottom" id="AJ9-Gu-z6Q"/>
                     <constraint firstItem="RMH-VP-IAO" firstAttribute="trailing" secondItem="dAC-gj-nEJ" secondAttribute="trailing" id="OJC-K4-ZJu"/>
                     <constraint firstItem="pGk-1u-yfA" firstAttribute="top" secondItem="dAC-gj-nEJ" secondAttribute="top" id="Sdn-CC-iCO"/>
-                    <constraint firstAttribute="trailing" secondItem="Dng-gp-21g" secondAttribute="trailing" id="XSe-Rw-v42"/>
+                    <constraint firstItem="RMH-VP-IAO" firstAttribute="top" secondItem="pGk-1u-yfA" secondAttribute="bottom" id="bLL-hV-n7p"/>
                     <constraint firstAttribute="bottomMargin" secondItem="RMH-VP-IAO" secondAttribute="bottom" id="kll-k2-oY0"/>
-                    <constraint firstItem="Dng-gp-21g" firstAttribute="leading" secondItem="dAC-gj-nEJ" secondAttribute="leading" id="mO7-bB-MeR"/>
                     <constraint firstItem="RMH-VP-IAO" firstAttribute="leading" secondItem="dAC-gj-nEJ" secondAttribute="leading" id="nRu-ja-5T5"/>
                 </constraints>
             </tableViewCellContentView>
@@ -56,9 +46,4 @@
             <point key="canvasLocation" x="43.511450381679388" y="7.746478873239437"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

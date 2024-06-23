@@ -19,14 +19,24 @@ class TopicDetailsViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView()
         self.setupBindings()
+        
+        // Adding back button image
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(systemName: "xmark")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(systemName: "xmark")
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.backItem?.title = "Custom"
     }
     
     func setupTableView() {
         topicDetailsView.tableView.dataSource = self
         topicDetailsView.tableView.delegate = self
         topicDetailsView.tableView.separatorStyle = .none
+        topicDetailsView.tableView.showsVerticalScrollIndicator = false
         topicDetailsView.tableView.rowHeight = UITableView.automaticDimension
-        topicDetailsView.tableView.estimatedRowHeight = 100
     }
     
     func setupBindings() {
@@ -41,9 +51,9 @@ extension TopicDetailsViewController: UITableViewDelegate, UITableViewDataSource
         return 1 
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 1000
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 1000
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.topicDetailsView.tableView.dequeueReusableCell(withIdentifier: TopicDetailTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailTableViewCell

@@ -16,10 +16,10 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="E9S-NY-o7u" customClass="TopicDetailsView" customModule="Bluedit" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-xP-rAq">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="10" y="59" width="373" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -27,8 +27,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="G1y-Ol-6Wv" firstAttribute="bottom" secondItem="xAQ-xP-rAq" secondAttribute="bottom" id="1A5-dU-t3F"/>
-                <constraint firstItem="G1y-Ol-6Wv" firstAttribute="trailing" secondItem="xAQ-xP-rAq" secondAttribute="trailing" id="AcH-le-qG2"/>
-                <constraint firstItem="xAQ-xP-rAq" firstAttribute="leading" secondItem="G1y-Ol-6Wv" secondAttribute="leading" id="K1r-yP-HUr"/>
+                <constraint firstItem="G1y-Ol-6Wv" firstAttribute="trailing" secondItem="xAQ-xP-rAq" secondAttribute="trailing" constant="10" id="AcH-le-qG2"/>
+                <constraint firstItem="xAQ-xP-rAq" firstAttribute="leading" secondItem="G1y-Ol-6Wv" secondAttribute="leading" constant="10" id="K1r-yP-HUr"/>
                 <constraint firstItem="xAQ-xP-rAq" firstAttribute="top" secondItem="G1y-Ol-6Wv" secondAttribute="top" id="svt-tT-ZjM"/>
             </constraints>
             <connections>

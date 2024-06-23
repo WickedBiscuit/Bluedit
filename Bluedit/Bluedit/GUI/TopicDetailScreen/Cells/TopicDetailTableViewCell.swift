@@ -30,9 +30,8 @@ class TopicDetailTableViewCell: UITableViewCell {
     func setupTableView() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
-//        self.tableView.rowHeight = UITableView.automaticDimension
-//        self.tableView.estimatedRowHeight = 100
-        
+        self.tableView.separatorStyle = .none
+
         // Reload table after setting up the table view 
         self.tableView.reloadData()
     }
@@ -47,16 +46,11 @@ extension TopicDetailTableViewCell: UITableViewDelegate, UITableViewDataSource {
         return 3 // Should generate 3 cells only for 3 separate parts
     }
     
-//       func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//            return 100
-//        }
-//        
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch(indexPath.row) {
             case 0:
                 let cell = self.tableView.dequeueReusableCell(withIdentifier: TopicDetailTopTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailTopTableViewCell
-                cell.updateDisplay(groupImageView: self.model?.groupImage ?? UIImage(), groupName: (self.model?.groupNameLabel)!, username: self.model?.groupNameLabel ?? "", postedTimelapse: self.model?.timePostedLabel ?? "")
+                cell.updateDisplay(groupImageView: self.model?.groupImage ?? UIImage(), groupName: self.model?.groupNameLabel ?? "", username: self.model?.posterUsername ?? "", postedTimelapse: self.model?.timePostedLabel ?? "")
                 cell.selectionStyle = .none
             
                 return cell
