@@ -8,8 +8,13 @@
 import Foundation
 import UIKit
 
+protocol TopicTableViewCellDelegate: AnyObject {
+    func upvoteCounterUpdated()
+}
+
 class TopicTableViewCell: UITableViewCell {
     var index: Int?
+    weak var delegate: TopicTableViewCellDelegate?
     
     @IBOutlet weak var groupImage: UIImageView!
     @IBOutlet weak var groupNameLabel: UILabel!
@@ -26,7 +31,7 @@ class TopicTableViewCell: UITableViewCell {
     func updateDisplay(model: TopicModel, index: Int) {
         self.groupImage.image = model.groupImage
         self.groupNameLabel.text = model.groupNameLabel
-        self.timePostedLabel.text = model.timePostedLabel
+        self.timePostedLabel.text = convertTimeInterval(from: model.postedTimeStamp ?? Date())
         
         self.topicTitleLabel.text = model.topicTitleLabel
         self.topicPreviewLabel.text = model.topicPreviewLabel
@@ -46,6 +51,8 @@ class TopicTableViewCell: UITableViewCell {
             }
             
             DataManager.shared.topicsDataArray[rowIndex].upvoteCounter = (DataManager.shared.topicsDataArray[rowIndex].upvoteCounter ?? 0) + 1
+            
+            delegate?.upvoteCounterUpdated()
         }
     }
     
@@ -59,6 +66,8 @@ class TopicTableViewCell: UITableViewCell {
             }
             
             DataManager.shared.topicsDataArray[rowIndex].upvoteCounter = (DataManager.shared.topicsDataArray[rowIndex].upvoteCounter ?? 0) - 1
+            
+            delegate?.upvoteCounterUpdated()
         }
     }
 }

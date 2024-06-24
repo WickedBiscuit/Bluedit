@@ -42,6 +42,7 @@
 		5F41B5732C2881B200F598BA /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5722C2881B200F598BA /* AddPostViewModel.swift */; };
 		5F41B5752C2881C200F598BA /* AddPostViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5742C2881C200F598BA /* AddPostViewModelProtocol.swift */; };
 		5F41B5772C2881CB00F598BA /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B5762C2881CB00F598BA /* AddPostViewController.swift */; };
+		5F41B57F2C29826800F598BA /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41B57E2C29826800F598BA /* GeneralHelper.swift */; };
 		5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8671992C26EA16005BA124 /* TopicModel.swift */; };
 		5F86719D2C26EE65005BA124 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719C2C26EE65005BA124 /* Extension.swift */; };
 		5F8671A02C27053A005BA124 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86719F2C27053A005BA124 /* AppCoordinator.swift */; };
@@ -108,6 +109,7 @@
 		5F41B5722C2881B200F598BA /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
 		5F41B5742C2881C200F598BA /* AddPostViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModelProtocol.swift; sourceTree = "<group>"; };
 		5F41B5762C2881CB00F598BA /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		5F41B57E2C29826800F598BA /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
 		5F8671992C26EA16005BA124 /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		5F86719C2C26EE65005BA124 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5F86719F2C27053A005BA124 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				5F86719C2C26EE65005BA124 /* Extension.swift */,
 				5F41B56B2C28760700F598BA /* DataManager.swift */,
+				5F41B57E2C29826800F598BA /* GeneralHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				5F41B5572C27B09400F598BA /* TopicDetailViewModelProtocol.swift in Sources */,
 				5F41B55A2C28217B00F598BA /* TopicDetailTableViewCell.swift in Sources */,
 				5F41B5732C2881B200F598BA /* AddPostViewModel.swift in Sources */,
+				5F41B57F2C29826800F598BA /* GeneralHelper.swift in Sources */,
 				5F41B5772C2881CB00F598BA /* AddPostViewController.swift in Sources */,
 				5F86719A2C26EA16005BA124 /* TopicModel.swift in Sources */,
 			);

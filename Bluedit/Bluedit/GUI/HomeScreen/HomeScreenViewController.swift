@@ -29,6 +29,7 @@ class HomeScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        DataManager.shared.sortTopicsByUpvote()
         self.viewModel.reloadTableView?()
     }
     
@@ -60,13 +61,22 @@ class HomeScreenViewController: UIViewController {
 
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataManager.shared.topicsDataArray.count
+        let totalTopicCount = DataManager.shared.topicsDataArray.count
+        
+        // If the total is more than 20 , limit it to just top 20
+        if(totalTopicCount < 20){
+            return totalTopicCount
+        } else {
+            return 20
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.homeScreenView.tableView.dequeueReusableCell(withIdentifier: TopicTableViewCell.cellIdentifier, for: indexPath) as! TopicTableViewCell
         
         cell.updateDisplay(model: DataManager.shared.topicsDataArray[indexPath.row], index: indexPath.row)
+        cell.delegate = self
         cell.selectionStyle = .none
         
         return cell
@@ -74,5 +84,13 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.viewModel.delegate?.directToTopicDetails(model: DataManager.shared.topicsDataArray[indexPath.row], index: indexPath.row)
+    }
+}
+
+extension HomeScreenViewController: TopicTableViewCellDelegate {
+    func upvoteCounterUpdated() {
+        // Resort the list of topics and reload table
+        DataManager.shared.sortTopicsByUpvote()
+        self.homeScreenView.tableView.reloadData()
     }
 }

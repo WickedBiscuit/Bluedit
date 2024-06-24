@@ -52,7 +52,7 @@ class AddPostViewController: UIViewController {
             // Default some of the variables including upvote that usually includes 1 auto upvote from the poster
             // Set an empty body if its still at the placeholder text
             
-            let newTopic = TopicModel(groupImage: UIImage(named: "TempCommunityIcon"), groupNameLabel: "r/WorldNews", timePostedLabel: "", topicTitleLabel: self.addPostView.titleTextView.text, topicPreviewLabel: self.isBodyTextViewEmpty ? "" : self.addPostView.bodyTextView.text, upvoteCounter: 1, posterUsername: "MikeWalzowski", timestamp: Date().timeIntervalSinceNow)
+            let newTopic = TopicModel(groupImage: UIImage(named: "TempCommunityIcon"), groupNameLabel: "r/WorldNews", topicTitleLabel: self.addPostView.titleTextView.text, topicPreviewLabel: self.isBodyTextViewEmpty ? "" : self.addPostView.bodyTextView.text, upvoteCounter: 1, posterUsername: "MikeWalzowski", timestamp: Date())
             
             DataManager.shared.topicsDataArray.append(newTopic)
             navigationController?.popViewController(animated: true)

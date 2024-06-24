@@ -14,9 +14,9 @@ class TopicDetailTopTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     
     
-    func updateDisplay(groupImageView: UIImage, groupName: String, username: String, postedTimelapse: String) {
+    func updateDisplay(groupImageView: UIImage, groupName: String, username: String, postedTimelapse: Date) {
         self.groupImageView.image = groupImageView
         self.groupLabel.text = groupName
-        self.usernameLabel.text = "u/" + username + " - " + postedTimelapse
+        self.usernameLabel.text = "u/" + username + " - " + convertTimeInterval(from: postedTimelapse) 
     }
 }
