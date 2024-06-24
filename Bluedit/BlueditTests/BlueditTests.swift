@@ -17,20 +17,46 @@ final class BlueditTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func test_TopicModelInitialization() throws {
+        // Test case to verify TopicModel initialization
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let groupImage = UIImage(named: "TempCommunityIcon")!
+        let groupName = "r/Swift"
+        let topicTitle = "What's your favorite Swift feature?"
+        let topicPreview = "I'm curious to know what everyone's favorite feature of Swift is."
+        let upvotes = 10
+        let poster = "SwiftEnthusiast"
+        let timestamp = Date()
+
+        let topic = TopicModel(groupImage: groupImage, groupNameLabel: groupName, topicTitleLabel: topicTitle, topicPreviewLabel: topicPreview, upvoteCounter: upvotes, posterUsername: poster, timestamp: timestamp)
+
+        XCTAssertEqual(topic.groupNameLabel, groupName)
+        XCTAssertEqual(topic.topicTitleLabel, topicTitle)
+        XCTAssertEqual(topic.topicPreviewLabel, topicPreview)
+        XCTAssertEqual(topic.upvoteCounter, upvotes)
+        XCTAssertEqual(topic.posterUsername, poster)
+        XCTAssertEqual(topic.postedTimeStamp, timestamp)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_TestTopicSortingMethod() throws {
+        //Test case to verify the sorting method
+        
+        let topics: [TopicModel] = [
+            TopicModel(groupImage: UIImage(named: "TempCommunityIcon")!, groupNameLabel: "Test1", topicTitleLabel: "Test1", topicPreviewLabel: "Test1", upvoteCounter: 20, posterUsername: "Roger", timestamp: Date()),
+            TopicModel(groupImage: UIImage(named: "TempCommunityIcon")!, groupNameLabel: "Test2", topicTitleLabel: "Test2", topicPreviewLabel: "Test2", upvoteCounter: 24, posterUsername: "Roger", timestamp: Date()),
+            TopicModel(groupImage: UIImage(named: "TempCommunityIcon")!, groupNameLabel: "Test3", topicTitleLabel: "Test3", topicPreviewLabel: "Test3", upvoteCounter: 19, posterUsername: "Roger", timestamp: Date()),
+            TopicModel(groupImage: UIImage(named: "TempCommunityIcon")!, groupNameLabel: "Test4", topicTitleLabel: "Test4", topicPreviewLabel: "Test4", upvoteCounter: 30, posterUsername: "Roger", timestamp: Date()),
+            TopicModel(groupImage: UIImage(named: "TempCommunityIcon")!, groupNameLabel: "Test5", topicTitleLabel: "Test5", topicPreviewLabel: "Test5", upvoteCounter: 10, posterUsername: "Roger", timestamp: Date()),]
+        DataManager.shared.topicsDataArray = topics
+        
+        DataManager.shared.sortTopicsByUpvote()
+        
+        XCTAssertEqual(DataManager.shared.topicsDataArray[0].topicTitleLabel, "Test4")
+        XCTAssertEqual(DataManager.shared.topicsDataArray[1].topicTitleLabel, "Test2")
+        XCTAssertEqual(DataManager.shared.topicsDataArray[2].topicTitleLabel, "Test1")
+        XCTAssertEqual(DataManager.shared.topicsDataArray[3].topicTitleLabel, "Test3")
+        XCTAssertEqual(DataManager.shared.topicsDataArray[4].topicTitleLabel, "Test5")
     }
 
 }
