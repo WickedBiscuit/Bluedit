@@ -27,6 +27,7 @@ class AppCoordinator: NSObject {
         vc.viewModel.topicModel = model
         vc.viewModel.index = index
         vc.viewModel.delegate = self
+        navigationController.navigationBar.isHidden = false
         navigationController.pushViewController(vc, animated: true)
     }
     
@@ -34,6 +35,7 @@ class AppCoordinator: NSObject {
         let vc = AddPostViewController()
         vc.viewModel = AddPostViewModel()
         vc.viewModel.delegate = self
+        navigationController.navigationBar.isHidden = true
         navigationController.pushViewController(vc, animated: true)
     }
 }

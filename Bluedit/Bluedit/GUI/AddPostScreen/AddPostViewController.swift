@@ -18,7 +18,6 @@ class AddPostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
         
         self.setupBindings()
     }
@@ -39,43 +38,69 @@ class AddPostViewController: UIViewController {
     
     @objc func nextButtonPressed()
     {
-        print("Next please")
+        // Unfocus all text views
+        self.addPostView.bodyTextView.resignFirstResponder()
+        self.addPostView.titleTextView.resignFirstResponder()
+        
+        if(self.isTitleTextViewEmpty) {
+            let alert = UIAlertController(title: "Where is the title?", message: "Title cannot be empty for your new post.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        } else {
+            // For now it will operate as a post button , normal reddit procedure is to move to community selection screen
+            // Default some of the variables including upvote that usually includes 1 auto upvote from the poster
+            // Set an empty body if its still at the placeholder text
+            
+            let newTopic = TopicModel(groupImage: UIImage(named: "TempCommunityIcon"), groupNameLabel: "r/WorldNews", timePostedLabel: "", topicTitleLabel: self.addPostView.titleTextView.text, topicPreviewLabel: self.isBodyTextViewEmpty ? "" : self.addPostView.bodyTextView.text, upvoteCounter: 1, posterUsername: "MikeWalzowski", timestamp: Date().timeIntervalSinceNow)
+            
+            DataManager.shared.topicsDataArray.append(newTopic)
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
     
 }
 
 extension AddPostViewController: UITextViewDelegate {
     
-    func textViewDidChange(_ textView: UITextView) {
-        
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let newText = (textView.text as NSString).replacingCharacters(in: range, with: text)
+        let numberOfChars = newText.count
+        return numberOfChars < 255
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if(textView == self.addPostView.titleTextView && self.isBodyTextViewEmpty) {
-           self.addPostView.titleTextView.text = ""
-        } else if (textView == self.addPostView.bodyTextView && self.isTitleTextViewEmpty) {
-            self.addPostView.bodyTextView.text = ""
-        }
-        
-    }
-        
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if(self.addPostView.titleTextView.text.count == 0) {
-            self.addPostView.titleTextView.text = "Title"
-            self.addPostView.titleTextView.textColor = UIColor.gray
-            self.isTitleTextViewEmpty = true
-        } else {
+        if textView == self.addPostView.titleTextView && self.isTitleTextViewEmpty {
+            self.addPostView.titleTextView.text = ""
             self.addPostView.titleTextView.textColor = UIColor.black
-            self.isTitleTextViewEmpty = false
+        } else if textView == self.addPostView.bodyTextView && self.isBodyTextViewEmpty {
+            self.addPostView.bodyTextView.text = ""
+            self.addPostView.bodyTextView.textColor = UIColor.black
+        }
+    }
+
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView == self.addPostView.titleTextView {
+            if self.addPostView.titleTextView.text.isEmpty {
+                self.addPostView.titleTextView.text = "Title"
+                self.addPostView.titleTextView.textColor = UIColor.gray
+                self.isTitleTextViewEmpty = true
+            } else {
+                self.addPostView.titleTextView.textColor = UIColor.black
+                self.isTitleTextViewEmpty = false
+            }
         }
         
-        if(self.addPostView.bodyTextView.text.count == 0) {
-            self.addPostView.bodyTextView.text = "body text (optional)"
-            self.addPostView.bodyTextView.textColor = UIColor.gray
-            self.isBodyTextViewEmpty = true
-        } else {
-            self.addPostView.bodyTextView.textColor = UIColor.black
-            self.isBodyTextViewEmpty = false
+        if textView == self.addPostView.bodyTextView {
+            if self.addPostView.bodyTextView.text.isEmpty {
+                self.addPostView.bodyTextView.text = "body text (optional)"
+                self.addPostView.bodyTextView.textColor = UIColor.gray
+                self.isBodyTextViewEmpty = true
+            } else {
+                self.addPostView.bodyTextView.textColor = UIColor.black
+                self.isBodyTextViewEmpty = false
+            }
         }
     }
 }

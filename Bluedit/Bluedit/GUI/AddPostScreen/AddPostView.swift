@@ -26,6 +26,10 @@ class AddPostView: UIView {
         }
     }
    
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!{
+        didSet {
+            nextButton.setTitle("Post", for: .normal)
+        }
+    }
     @IBOutlet weak var closeButton: UIButton!
 }

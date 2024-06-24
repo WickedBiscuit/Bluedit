@@ -50,17 +50,6 @@ class HomeScreenViewController: UIViewController {
         let addPostButton = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addPostButtonPressed))
         
         self.homeScreenView.bottomNavigationBar.items = [addPostButton]
-        
-//        let plusImage = UIImage(systemName: "plus");
-//
-//        let createPostButton = UIButton(type: .custom)
-//        createPostButton.addTarget(self, action: #selector(addPostButtonPressed), for: .touchUpInside)
-//        createPostButton.setBackgroundImage(plusImage, for: .normal)
-//        createPostButton.setTitle("Create", for: .normal)
-//        createPostButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
-//
-//        let barButton = UIBarButtonItem(customView: createPostButton)
-//        self.homeScreenView.bottomNavigationBar.items = [barButton]
     }
     
     @objc func addPostButtonPressed()

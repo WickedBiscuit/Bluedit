@@ -17,6 +17,8 @@ struct TopicModel: Mappable {
     var topicPreviewLabel: String?
     var upvoteCounter: Int?
     
+    var postedTimeStamp: TimeInterval?
+    
     init(groupImage: UIImage?, groupNameLabel: String?, timePostedLabel: String?, topicTitleLabel: String?, topicPreviewLabel: String?, upvoteCounter: Int?, posterUsername: String) {
         self.groupImage = groupImage
         self.groupNameLabel = groupNameLabel
@@ -25,6 +27,17 @@ struct TopicModel: Mappable {
         self.topicPreviewLabel = topicPreviewLabel
         self.upvoteCounter = upvoteCounter
         self.posterUsername = posterUsername
+    }
+    
+    init(groupImage: UIImage?, groupNameLabel: String?, timePostedLabel: String?, topicTitleLabel: String?, topicPreviewLabel: String?, upvoteCounter: Int?, posterUsername: String, timestamp: TimeInterval) {
+        self.groupImage = groupImage
+        self.groupNameLabel = groupNameLabel
+        self.timePostedLabel = timePostedLabel
+        self.topicTitleLabel = topicTitleLabel
+        self.topicPreviewLabel = topicPreviewLabel
+        self.upvoteCounter = upvoteCounter
+        self.posterUsername = posterUsername
+        self.postedTimeStamp = timestamp
     }
     
     init?(map: Map)
@@ -41,5 +54,6 @@ struct TopicModel: Mappable {
         topicPreviewLabel <- map["topicPreviewLabel"]
         upvoteCounter <- map["upvoteCounter"]
         posterUsername <- map["posterUsername"]
+        postedTimeStamp <- map["postedTimeStamp"]
     }
 }

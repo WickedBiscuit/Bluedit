@@ -29,7 +29,7 @@ class TopicTableViewCell: UITableViewCell {
         self.timePostedLabel.text = model.timePostedLabel
         
         self.topicTitleLabel.text = model.topicTitleLabel
-        self.topicTitleLabel.text = model.topicPreviewLabel
+        self.topicPreviewLabel.text = model.topicPreviewLabel
         
         self.upvoteCounter.text = String(model.upvoteCounter ?? 0)
         
