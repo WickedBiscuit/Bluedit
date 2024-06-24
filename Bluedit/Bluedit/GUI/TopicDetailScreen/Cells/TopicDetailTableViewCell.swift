@@ -52,7 +52,7 @@ extension TopicDetailTableViewCell: UITableViewDelegate, UITableViewDataSource {
         switch(indexPath.row) {
             case 0:
                 let cell = self.tableView.dequeueReusableCell(withIdentifier: TopicDetailTopTableViewCell.cellIdentifier, for: indexPath) as! TopicDetailTopTableViewCell
-                cell.updateDisplay(groupImageView: self.model?.groupImage ?? UIImage(), groupName: self.model?.groupNameLabel ?? "", username: self.model?.posterUsername ?? "", postedTimelapse: self.model?.timePostedLabel ?? "")
+                cell.updateDisplay(groupImageView: self.model?.groupImage ?? UIImage(), groupName: self.model?.groupNameLabel ?? "", username: self.model?.posterUsername ?? "", postedTimelapse: self.model?.postedTimeStamp ?? Date())
                 cell.selectionStyle = .none
             
                 return cell

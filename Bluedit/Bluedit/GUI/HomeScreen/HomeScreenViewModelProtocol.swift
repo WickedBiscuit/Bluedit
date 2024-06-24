@@ -14,4 +14,5 @@ protocol HomeScreenViewModelProtocol {
 
 protocol HomeScreenViewModelDelegate: AnyObject {
     func directToTopicDetails(model: TopicModel, index: Int)
+    func directToAddPost()
 }

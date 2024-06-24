@@ -15,4 +15,9 @@ class DataManager {
     var counter: Int = 0
     
     private init() {}
+    
+    func sortTopicsByUpvote() {
+        // Upvote counter in this scenario will not be null
+        self.topicsDataArray.sort { $0.upvoteCounter! > $1.upvoteCounter! }
+    }
 }
