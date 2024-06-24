@@ -18,6 +18,7 @@ class AppCoordinator: NSObject {
         let vc = HomeScreenViewController()
         vc.viewModel = HomeScreenViewModel()
         vc.viewModel.delegate = self
+        navigationController.navigationBar.isHidden = true
         navigationController.pushViewController(vc, animated: true)
     }
     

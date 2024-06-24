@@ -23,6 +23,8 @@ class TopicDetailsViewController: UIViewController {
         // Adding back button image
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(systemName: "xmark")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(systemName: "xmark")
+        
+        self.navigationController?.navigationBar.topItem?.backButtonTitle = ""
 
     }
     
