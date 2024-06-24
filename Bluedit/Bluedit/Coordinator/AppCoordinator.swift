@@ -29,12 +29,25 @@ class AppCoordinator: NSObject {
         vc.viewModel.delegate = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    private func navigateToAddPostScreen() {
+        let vc = AddPostViewController()
+        vc.viewModel = AddPostViewModel()
+        vc.viewModel.delegate = self
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
 
 extension AppCoordinator: HomeScreenViewModelDelegate {
     func directToTopicDetails(model: TopicModel, index: Int) {
         navigateToTopicDetails(model: model, index: index)
     }
+    
+    func directToAddPost() {
+        navigateToAddPostScreen()
+    }
 }
 
 extension AppCoordinator: TopicDetailsViewModelDelegate {}
+
+extension AppCoordinator: AddPostViewModelProtocolDelegate {}

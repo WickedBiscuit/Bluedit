@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeScreenView: UIView {
+    @IBOutlet weak var bottomNavigationBar: UIToolbar!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.registerTableViewCellFromNib(nibName: TopicTableViewCell.cellIdentifier)

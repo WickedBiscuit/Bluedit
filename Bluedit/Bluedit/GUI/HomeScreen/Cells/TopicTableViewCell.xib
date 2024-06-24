@@ -58,14 +58,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRX-f9-qqH" userLabel="ContentSegment">
                                 <rect key="frame" x="0.0" y="50" width="467" height="355"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Trouble with travelling blah blah blah blah blah blah blah blah blah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JV-5t-gUq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Trouble with travelling blah blah blah blah blah blah blah blah blah" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JV-5t-gUq">
                                         <rect key="frame" x="0.0" y="0.0" width="467" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-Qc-h7H">
-                                        <rect key="frame" x="0.0" y="40.666666666666657" width="467" height="314.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="50.666666666666657" width="467" height="304.33333333333337"/>
                                         <string key="text">Maybe this is just me but I feel that travelling is such a hassle sometimes, but I do enjoy travelling with people. Such Conflicting feelings, how...</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -74,7 +74,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="WWr-Qc-h7H" firstAttribute="top" secondItem="8JV-5t-gUq" secondAttribute="bottom" id="0HJ-12-bXR"/>
+                                    <constraint firstItem="WWr-Qc-h7H" firstAttribute="top" secondItem="8JV-5t-gUq" secondAttribute="bottom" constant="10" id="0HJ-12-bXR"/>
                                     <constraint firstItem="8JV-5t-gUq" firstAttribute="leading" secondItem="uRX-f9-qqH" secondAttribute="leading" id="KwN-Zb-gQN"/>
                                     <constraint firstAttribute="trailing" secondItem="WWr-Qc-h7H" secondAttribute="trailing" id="Z1a-m3-iHO"/>
                                     <constraint firstAttribute="trailing" secondItem="8JV-5t-gUq" secondAttribute="trailing" id="ZR1-R4-LFd"/>
