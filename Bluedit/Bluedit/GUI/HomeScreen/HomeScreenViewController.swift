@@ -48,9 +48,32 @@ class HomeScreenViewController: UIViewController {
     }
     
     func setupBottomNavigationbar() {
-        let addPostButton = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addPostButtonPressed))
+        let customButtonView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 40)))
         
-        self.homeScreenView.bottomNavigationBar.items = [addPostButton]
+        // Create an image view
+        let imageView = UIImageView(image: UIImage(systemName: "plus"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: 35, y: 0, width: 30, height: 30) // Adjust size and position
+        customButtonView.addSubview(imageView)
+        
+        // Create a label for the title
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 35, width: 100, height: 25))
+        titleLabel.text = "Create"
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        customButtonView.addSubview(titleLabel)
+        
+        // Add tap gesture recognizer to the custom button view
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(addPostButtonPressed))
+        customButtonView.addGestureRecognizer(gesture)
+        
+        // Create UIBarButtonItem with custom view
+        let barButtonItem = UIBarButtonItem(customView: customButtonView)
+        
+        // Assign to the bottomNavigationBar's items array
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        self.homeScreenView.bottomNavigationBar.items = [flexibleSpace, barButtonItem, flexibleSpace]
     }
     
     @objc func addPostButtonPressed()
