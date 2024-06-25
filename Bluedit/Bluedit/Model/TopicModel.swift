@@ -18,15 +18,6 @@ struct TopicModel: Mappable {
     
     var postedTimeStamp: Date?
     
-//    init(groupImage: UIImage?, groupNameLabel: String?, topicTitleLabel: String?, topicPreviewLabel: String?, upvoteCounter: Int?, posterUsername: String) {
-//        self.groupImage = groupImage
-//        self.groupNameLabel = groupNameLabel
-//        self.topicTitleLabel = topicTitleLabel
-//        self.topicPreviewLabel = topicPreviewLabel
-//        self.upvoteCounter = upvoteCounter
-//        self.posterUsername = posterUsername
-//    }
-    
     init(groupImage: UIImage?, groupNameLabel: String?, topicTitleLabel: String?, topicPreviewLabel: String?, upvoteCounter: Int?, posterUsername: String, timestamp: Date) {
         self.groupImage = groupImage
         self.groupNameLabel = groupNameLabel

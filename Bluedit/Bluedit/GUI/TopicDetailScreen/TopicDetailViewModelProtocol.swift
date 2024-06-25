@@ -6,10 +6,6 @@
 //
 
 import Foundation
-protocol TopicDetailsViewModelProtocol {
-    // Add necessary protocols here
-}
+protocol TopicDetailsViewModelProtocol {}
 
-protocol TopicDetailsViewModelDelegate: AnyObject {
-    // Add necessary protocol delegates here
-}
+protocol TopicDetailsViewModelDelegate: AnyObject {}
