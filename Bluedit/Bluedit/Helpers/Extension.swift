@@ -10,6 +10,7 @@ import UIKit
 
 extension UITableView
 {
+    // Assist in registering cells for the table view
     func registerTableViewCellFromNib(nibName: String)
     {
         return self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
@@ -18,6 +19,7 @@ extension UITableView
 
 extension UITableViewCell {
 
+    // Assist in returning the identifier for the table view cells 
     class var cellIdentifier : String {
         return "\(self)"
     }
